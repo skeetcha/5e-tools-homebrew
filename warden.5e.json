@@ -984,5 +984,66 @@
                 }
             ]
         }
+    ],
+    "spell": [
+        {
+            "name": "Investiture of Corruption",
+            "source": "WardenClass",
+            "level": 6,
+            "school": "T",
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ],
+            "range": {
+                "type": "point",
+                "distance": {
+                    "type": "self"
+                }
+            },
+            "components": {
+                "v": true,
+                "s": true
+            },
+            "duration": [
+                {
+                    "type": "timed",
+                    "duration": {
+                        "type": "minute",
+                        "amount": 10
+                    },
+                    "concentration": true
+                }
+            ],
+            "classes": {
+                "fromClassList": [
+                    {
+                        "name": "Druid",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Sorcerer",
+                        "source": "PHB"
+                    },
+                    {
+                        "name": "Warlock",
+                        "source": "PHB"
+                    }
+                ]
+            },
+            "entries": [
+                "Until the spell ends, a noxious and acrid miasma surrounds your body, and you gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You have resistance to acid and poison damage, and are immune to the poisoned condition.",
+                        "The air in a 10-foot radius around you is toxic, creatures that must breath begin to suffocate.",
+                        "You can use your action to blow a puff of noxious gas in a 15-foot cone originating from your mouth. Creatures affected by this must succed on a Constitution saving throw or become poisoned. They can repeat this saving throw at the start of their turn, ending the effect on a successful save."
+                    ]
+                }
+            ]
+        }
     ]
 }
