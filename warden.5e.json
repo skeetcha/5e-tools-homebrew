@@ -601,7 +601,7 @@
                                 "items": [
                                     "Earthen Bulwark: {@spell investiture of stone|xge}",
                                     "Flaming Bravery: {@spell investiture of flame|xge}",
-                                    "Putrid Corrosion: {@spell investiture of corruption|wc}",
+                                    "Putrid Corrosion: {@spell investiture of corruption|WardenClass}",
                                     "Stoic Chill: {@spell investiture of ice|xge}",
                                     "Unrelenting Storm: {@spell investiture of wind|xge}"
                                 ]
