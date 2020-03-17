@@ -1,0 +1,104 @@
+{
+    "_meta": {
+        "sources": [
+            {
+                "json": "EmblemSubclass",
+                "abbreviation": "ES",
+                "full": "Emblem Subclass",
+                "authors": [
+                    "Zachary Zumstein"
+                ],
+                "convertedBy": [
+                    "Daniel Unterholzner"
+                ],
+                "version": "1.0",
+                "url": "https://github.com/skeetcha/5e-tools-homebrew",
+                "targetSchema": "1.2.1"
+            }
+        ]
+    },
+    "subclass": [
+        {
+            "class": "Warden",
+            "name": "Emblem",
+            "source": "EmblemSubclass",
+            "classSource": "WardenClass",
+            "subclassFeatures": [
+                [
+                    {
+                        "name": "Emblem Spells",
+                        "entries": [
+                            "You learn an additional spell when you reach certain levels in this archetype, as shown in the Emblem Spells table. The spell counts as a warden spell for you, but it doesn't count against the number of warden spells you know.",
+                            {
+                                "type": "table",
+                                "caption": "Emblem Spells",
+                                "colLabels": [
+                                    "Spell Level",
+                                    "Spells"
+                                ],
+                                "colStyle": [
+                                    "text-center",
+                                    "text-left"
+                                ],
+                                "rows": [
+                                    [
+                                        "1st",
+                                        "{@spell Heroism|phb}"
+                                    ],
+                                    [
+                                        "2nd",
+                                        "{@spell Find Steed|phb}"
+                                    ],
+                                    [
+                                        "3rd",
+                                        "{@spell Beacon of Hope|phb}"
+                                    ],
+                                    [
+                                        "4th",
+                                        "{@spell Freedom of Movement|phb}"
+                                    ]
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Natural Assistance",
+                        "entries": [
+                            "You have dedicated yourself to fight alongside those you bloster with nature's might. You gain proficiency in all martial weapons, and with the Persuasion skill.",
+                            "Additionally, when you use the Attack action, you can take the Help action as a bonus action. You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest."
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "name": "Bolstering Elements",
+                        "entries": [
+                            "Starting at 6th level, you can cast {@spell bless|phb} as a 1st-level spell by expending three power dice. When you cast this spell this way, each ally affected by the spell gains a power die, and can use your Natural Power ability to deal additional damage on weapon attacks.",
+                            "Each ally can expend power dice only to deal damage of the type associated with your Prime Element: bludgeoning for Earthen Bulwark, fire for Flaming Bravery, acid for Putrid Corrosion, cold for Stoic Chill, and lightning or thunder damage for Unrelenting Storm.",
+                            "The {@spell bless|phb} spell is also added to your list of Spells Known and can be casted using a Warden spell slot."
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "name": "Rally",
+                        "entries": [
+                            "At 10th level, you can command a violent depiction of the elements to rally your allies. As an action, you can cause a visible display of the elements to appear around yourself or a friendly creature within 60 feet, shrouding them in elemental power. When you do so, you can end one effect causing the creature to be charmed, frightened, or restrained.",
+                            "You can use this ability a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest."
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "name": "Elemental Command",
+                        "entries": [
+                            "At 14th level, when you use the Help action, you can expend two power dice. The creature you aid can immediately use its reaction to make one weapon attack against the target of your Help action, dealing additional damage equal to the result of your power dice."
+                        ]
+                    }
+                ]
+            ],
+            "shortName": "Emblem",
+            "page": 1
+        }
+    ]
+}
