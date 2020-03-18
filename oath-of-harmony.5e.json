@@ -27,31 +27,45 @@
                     {
                         "name": "Oath of Harmony",
                         "entries": [
-                            "The Oath of Harmony is sworn by knights who devoutly believe music and emotion must be regarded with the highest admiration and respect. Paladins who take up this oath protect bards and other artist from harm; and aid, encourage, and entertain those suffering in times of great tragedy."
+                            "The Oath of Harmony is sworn by knights who devoutly believe music and emottion must be regarded with the highest admiration and respect. Paladins who take up this oath protect bards and other artists from harm; and aid, encourage, and entertain those suffering in times of great tragedy.",
                             {
                                 "type": "entries",
                                 "name": "Tenets of Harmony",
                                 "entries": [
-                                    "The tenets of the Oath of Harmony have been established by bardic colleges centuries ago. The oath doesn't bind itself to law or chaos, but asserts the conviction that the world is good in nature.",
                                     {
                                         "type": "entries",
-                                        "name": "Harmonize",
                                         "entries": [
-                                            "Working together is the key to succes. Every soloist needs their accompaniment. Empower your friends and allies to archieve greatness."
+                                            {
+                                                "type": "entries",
+                                                "name": "Harmonize",
+                                                "entries": [
+                                                    "Working together is the key to success. Every soloist needs their accompaniment. Empower your friends and allies to achieve greatness."
+                                                ]
+                                            }
                                         ]
                                     },
                                     {
                                         "type": "entries",
-                                        "name": "Quell the Silence",
                                         "entries": [
-                                            "Stand against the forces that wish to snuff out the joy of life. The good that sings loud and proud must never be silenced."
+                                            {
+                                                "type": "entries",
+                                                "name": "Quell the Silence",
+                                                "entries": [
+                                                    "Stand against the forces that wish to snuff out the joy of life. The good that sings loud and proud must never be silenced."
+                                                ]
+                                            }
                                         ]
                                     },
                                     {
                                         "type": "entries",
-                                        "name": "The Show Must Go On",
                                         "entries": [
-                                            "Never submit in the face of great adversity. Let music revitalize the hope for all who live in despair."
+                                            {
+                                                "type": "entries",
+                                                "name": "The Show Must Go On",
+                                                "entries": [
+                                                    "Never submit in the face of great adversity. Let music revitalize the hope for all who live in despair."
+                                                ]
+                                            }
                                         ]
                                     }
                                 ]
@@ -70,7 +84,7 @@
                                         ],
                                         "colStyles": [
                                             "text-center",
-                                            "text-right"
+                                            "text-left"
                                         ],
                                         "rows": [
                                             [
@@ -94,21 +108,21 @@
                                                 "{@spell mass cure wounds|phb}, {@spell seeming|phb}"
                                             ]
                                         ]
-                                    },
-                                    {
-                                        "type": "entries",
-                                        "name": "Channel Divinity: Fortissimio",
-                                        "entries": [
-                                            "You wield sound as your weapon. Whenever you deal damage with a melee weapon to a creature, you can use your Channel Divinity to increase the damage dealt by 1d10 thunder damage."
-                                        ]
-                                    },
-                                    {
-                                        "type": "entries",
-                                        "name": "Channel Divinity: Beguiling Melody",
-                                        "entries": [
-                                            "As an action, you sing or play a short beautiful song. All creatures within 30 feet of you that can hear you must make a Wisdom saving throw against your paladin spellcasting DC. On a failure, they become charmed for 1 minute."
-                                        ]
                                     }
+                                ]
+                            },
+                            {
+                                "type": "entries",
+                                "name": "Channel Divinity: Fortississimo",
+                                "entries": [
+                                    "You wield sound as your weapon. Whenever you deal damage with a melee weapon to a creature, you can use your Channel Divinity to increase the damage dealt by 1d10 thunder damage."
+                                ]
+                            },
+                            {
+                                "type": "entries",
+                                "name": "Channel Divinity: Beguiling Melody",
+                                "entries": [
+                                    "As an action, you sing or play a short, beautiful song. All creatures within 30 feet of you that can hear you must make a Wisdom saving throw against your paladin spellcasting DC. On a failure, they become charmed for 1 minute."
                                 ]
                             }
                         ]
@@ -116,35 +130,50 @@
                 ],
                 [
                     {
-                        "name": "Aura of Confidence",
                         "entries": [
-                            "Starting at 7th level, your musical presence exudes a confident aura. You and friendly creatures within 10 feet of you can't be frightened while you are conscious.",
-                            "At 18th level, the range of your Aura of Confidence increases to 30 feet."
-                        ]
-                    }
-                ],
-                [
-                    {
-                        "name": "Music Transcends All Barriers",
-                        "entries": [
-                            "Starting at 15th level, you are always under the effects of the {@spell comprehend languages|phb} spell.",
-                            "Additionally, you gain proficiency in the Persuasion and Performance skills if you don't already have it. Your proficiency bonus is doubled for any ability check that uses either of those proficiencies."
-                        ]
-                    }
-                ],
-                [
-                    {
-                        "name": "Inspiring Cadence",
-                        "entries": [
-                            "At 20th level, as an action, you transform into a one-person orchestra. An epic concoction of sound and rhythm fills the space around you. You gain the following benefits for 1 minute:",
                             {
-                                "type": "list",
-                                "items": [
-                                    "You have resistance to all damage. You have immunity to thunder damage.",
-                                    "Allies who start their turn within 60 feet of you regain hit points equal to 1d8 + your Charisma modifier."
+                                "type": "entries",
+                                "name": "Aura of Confidence",
+                                "entries": [
+                                    "Starting at 7th level, your musical presence exudes a confident aura. You and friendly creatures within 10 feet of you can't be frightened while you are conscious.",
+                                    "At 18th level, the range of this aura increases to 30 feet."
                                 ]
-                            },
-                            "Once you use this feature, you can't use it again until you finish a long rest."
+                            }
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "entries": [
+                            {
+                                "type": "entries",
+                                "name": "Music Transcends All Barriers",
+                                "entries": [
+                                    "Starting at 15th level, you are always under the effects of the {@spell comprehend languages|phb} spell.",
+                                    "Additionally, you gain proficiency in the Persuasion and Performance skills if you don't already have it. Your proficiency bonus is doubled for any ability check that uses either of those proficiencies."
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "entries": [
+                            {
+                                "type": "entries",
+                                "name": "Inspiring Cadence",
+                                "entries": [
+                                    "At 20th level, as an action, you transform into a one-person orchestra. An epic concoction of sound and rhythm fills the space around you. You gain the following benefits for 1 minute:",
+                                    {
+                                        "type": "list",
+                                        "items": [
+                                            "You have resistance to all damage. You have immunity to thunder damage.",
+                                            "Allies who start their turn within 60 feet of you regain hit points equal to 1d8 + your Charisma modifier."
+                                        ]
+                                    },
+                                    "Once you use this feature, you can't use it again until you finish a long rest."
+                                ]
+                            }
                         ]
                     }
                 ]
