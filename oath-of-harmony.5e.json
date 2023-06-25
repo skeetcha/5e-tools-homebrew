@@ -1,4 +1,5 @@
 {
+    "$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
     "_meta": {
         "sources": [
             {
@@ -9,177 +10,252 @@
                     "u/pretentiouscow"
                 ],
                 "convertedBy": [
-                    "Daniel Unterholzner"
+                    "Cass Unterholzner"
                 ],
                 "url": "https://github.com/skeetcha/5e-tools-homebrew",
-                "targetSchema": "1.2.1",
                 "version": "1.0"
             }
         ]
     },
     "subclass": [
         {
-            "class": "Paladin",
             "name": "Oath of Harmony",
             "source": "HarmonyOath",
-            "subclassFeatures": [
-                [
-                    {
-                        "name": "Oath of Harmony",
-                        "entries": [
-                            "The Oath of Harmony is sworn by knights who devoutly believe music and emottion must be regarded with the highest admiration and respect. Paladins who take up this oath protect bards and other artists from harm; and aid, encourage, and entertain those suffering in times of great tragedy.",
-                            {
-                                "type": "entries",
-                                "name": "Tenets of Harmony",
-                                "entries": [
-                                    {
-                                        "type": "entries",
-                                        "entries": [
-                                            {
-                                                "type": "entries",
-                                                "name": "Harmonize",
-                                                "entries": [
-                                                    "Working together is the key to success. Every soloist needs their accompaniment. Empower your friends and allies to achieve greatness."
-                                                ]
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "type": "entries",
-                                        "entries": [
-                                            {
-                                                "type": "entries",
-                                                "name": "Quell the Silence",
-                                                "entries": [
-                                                    "Stand against the forces that wish to snuff out the joy of life. The good that sings loud and proud must never be silenced."
-                                                ]
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "type": "entries",
-                                        "entries": [
-                                            {
-                                                "type": "entries",
-                                                "name": "The Show Must Go On",
-                                                "entries": [
-                                                    "Never submit in the face of great adversity. Let music revitalize the hope for all who live in despair."
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "type": "entries",
-                                "name": "Oath Spells",
-                                "entries": [
-                                    "You gain oath spells at the paladin levels listed.",
-                                    {
-                                        "type": "table",
-                                        "caption": "Oath of Harmony Spells",
-                                        "colLabels": [
-                                            "Paladin Level",
-                                            "Spells"
-                                        ],
-                                        "colStyles": [
-                                            "text-center",
-                                            "text-left"
-                                        ],
-                                        "rows": [
-                                            [
-                                                "3rd",
-                                                "{@spell sleep|phb}, {@spell dissonant whispers|phb}"
-                                            ],
-                                            [
-                                                "5th",
-                                                "{@spell calm emotions|phb}, {@spell warding bond|phb}"
-                                            ],
-                                            [
-                                                "9th",
-                                                "{@spell beacon of hope|phb}, {@spell major image|phb}"
-                                            ],
-                                            [
-                                                "13th",
-                                                "{@spell confusion|phb}, {@spell compulsion|phb}"
-                                            ],
-                                            [
-                                                "17th",
-                                                "{@spell mass cure wounds|phb}, {@spell seeming|phb}"
-                                            ]
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "type": "entries",
-                                "name": "Channel Divinity: Fortississimo",
-                                "entries": [
-                                    "You wield sound as your weapon. Whenever you deal damage with a melee weapon to a creature, you can use your Channel Divinity to increase the damage dealt by 1d10 thunder damage."
-                                ]
-                            },
-                            {
-                                "type": "entries",
-                                "name": "Channel Divinity: Beguiling Melody",
-                                "entries": [
-                                    "As an action, you sing or play a short, beautiful song. All creatures within 30 feet of you that can hear you must make a Wisdom saving throw against your paladin spellcasting DC. On a failure, they become charmed for 1 minute."
-                                ]
-                            }
-                        ]
-                    }
-                ],
-                [
-                    {
-                        "entries": [
-                            {
-                                "type": "entries",
-                                "name": "Aura of Confidence",
-                                "entries": [
-                                    "Starting at 7th level, your musical presence exudes a confident aura. You and friendly creatures within 10 feet of you can't be frightened while you are conscious.",
-                                    "At 18th level, the range of this aura increases to 30 feet."
-                                ]
-                            }
-                        ]
-                    }
-                ],
-                [
-                    {
-                        "entries": [
-                            {
-                                "type": "entries",
-                                "name": "Music Transcends All Barriers",
-                                "entries": [
-                                    "Starting at 15th level, you are always under the effects of the {@spell comprehend languages|phb} spell.",
-                                    "Additionally, you gain proficiency in the Persuasion and Performance skills if you don't already have it. Your proficiency bonus is doubled for any ability check that uses either of those proficiencies."
-                                ]
-                            }
-                        ]
-                    }
-                ],
-                [
-                    {
-                        "entries": [
-                            {
-                                "type": "entries",
-                                "name": "Inspiring Cadence",
-                                "entries": [
-                                    "At 20th level, as an action, you transform into a one-person orchestra. An epic concoction of sound and rhythm fills the space around you. You gain the following benefits for 1 minute:",
-                                    {
-                                        "type": "list",
-                                        "items": [
-                                            "You have resistance to all damage. You have immunity to thunder damage.",
-                                            "Allies who start their turn within 60 feet of you regain hit points equal to 1d8 + your Charisma modifier."
-                                        ]
-                                    },
-                                    "Once you use this feature, you can't use it again until you finish a long rest."
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            ],
+            "className": "Paladin",
+            "classSource": "PHB",
             "shortName": "Harmony",
-            "page": 1
+            "subclassFeatures": [
+                "Oath of Harmony|Paladin|PHB|Harmony|HarmonyOath|3|HarmonyOath",
+                "Aura of Confidence|Paladin|PHB|Harmony|HarmonyOath|7|HarmonyOath",
+                "Music Transcends All Barriers|Paladin|PHB|Harmony|HarmonyOath|15|HarmonyOath",
+                "Inspiring Cadence|Paladin|PHB|Harmony|HarmonyOath|20|HarmonyOath"
+            ],
+            "additionalSpells": [
+                {
+                    "prepared": {
+                        "3": [
+                            "sleep",
+                            "dissonant whispers"
+                        ],
+                        "5": [
+                            "calm emotions",
+                            "warding bond"
+                        ],
+                        "9": [
+                            "beacon of hope",
+                            "major image"
+                        ],
+                        "13": [
+                            "confusion",
+                            "compulsion"
+                        ],
+                        "17": [
+                            "mass cure wounds",
+                            "seeming"
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "subclassFeature": [
+        {
+            "name": "Oath of Harmony",
+            "source": "HarmonyOath",
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Harmony",
+            "subclassSource": "HarmonyOath",
+            "level": 3,
+            "entries": [
+                "The Oath of Harmony is sworn by knights who devoutly believe music and emottion must be regarded with the highest admiration and respect. Paladins who take up this oath protect bards and other artists from harm; and aid, encourage, and entertain those suffering in times of great tragedy.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Tenets of Harmony|Paladin|PHB|Harmony|HarmonyOath|3|HarmonyOath"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Oath Spells|Paladin|PHB|Harmony|HarmonyOath|3|HarmonyOath"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Fortississimo|Paladin|PHB|Harmony|HarmonyOath|3|HarmonyOath"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Divinity: Beguiling Melody|Paladin|PHB|Harmony|HarmonyOath|3|HarmonyOath"
+                }
+            ]
+        },
+        {
+            "name": "Tenets of Harmony",
+            "source": "HarmonyOath",
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Harmony",
+            "subclassSource": "HarmonyOath",
+            "level": 3,
+            "header": 1,
+            "entries": [
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Harmonize",
+                            "entries": [
+                                "Working together is the key to success. Every soloist needs their accompaniment. Empower your friends and allies to achieve greatness."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "Quell the Silence",
+                            "entries": [
+                                "Stand against the forces that wish to snuff out the joy of life. The good that sings loud and proud must never be silenced."
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "entries": [
+                        {
+                            "type": "entries",
+                            "name": "The Show Must Go On",
+                            "entries": [
+                                "Never submit in the face of great adversity. Let music revitalize the hope for all who live in despair."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Oath Spells",
+            "source": "HarmonyOath",
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Harmony",
+            "subclassSource": "HarmonyOath",
+            "level": 3,
+            "entries": [
+                "You gain oath spells at the paladin levels listed.",
+                {
+                    "type": "table",
+                    "caption": "Oath of Harmony Spells",
+                    "colLabels": [
+                        "Paladin Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "text-center",
+                        "text-left"
+                    ],
+                    "rows": [
+                        [
+                            "3rd",
+                            "{@spell sleep|phb}, {@spell dissonant whispers|phb}"
+                        ],
+                        [
+                            "5th",
+                            "{@spell calm emotions|phb}, {@spell warding bond|phb}"
+                        ],
+                        [
+                            "9th",
+                            "{@spell beacon of hope|phb}, {@spell major image|phb}"
+                        ],
+                        [
+                            "13th",
+                            "{@spell confusion|phb}, {@spell compulsion|phb}"
+                        ],
+                        [
+                            "17th",
+                            "{@spell mass cure wounds|phb}, {@spell seeming|phb}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Channel Divinity: Fortississimo",
+            "source": "HarmonyOath",
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Harmony",
+            "subclassSource": "HarmonyOath",
+            "level": 3,
+            "consumes": {
+                "name": "Channel Divinity"
+            },
+            "entries": [
+                "You wield sound as your weapon. Whenever you deal damage with a melee weapon to a creature, you can use your Channel Divinity to increase the damage dealt by 1d10 thunder damage."
+            ]
+        },
+        {
+            "name": "Channel Divinity: Beguiling Melody",
+            "source": "HarmonyOath",
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Harmony",
+            "subclassSource": "HarmonyOath",
+            "level": 3,
+            "consumes": {
+                "name": "Channel Divinity"
+            },
+            "entries": [
+                "As an action, you sing or play a short, beautiful song. All creatures within 30 feet of you that can hear you must make a Wisdom saving throw against your paladin spellcasting DC. On a failure, they become charmed for 1 minute."
+            ]
+        },
+        {
+            "name": "Aura of Confidence",
+            "source": "HarmonyOath",
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Harmony",
+            "subclassSource": "HarmonyOath",
+            "level": 7,
+            "entries": [
+                "Starting at 7th level, your musical presence exudes a confident aura. You and friendly creatures within 10 feet of you can't be frightened while you are conscious.",
+                "At 18th level, the range of this aura increases to 30 feet."
+            ]
+        },
+        {
+            "name": "Music Transcends All Barriers",
+            "source": "HarmonyOath",
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Harmony",
+            "subclassSource": "HarmonyOath",
+            "level": 15,
+            "entries": [
+                "Starting at 15th level, you are always under the effects of the {@spell comprehend languages|phb} spell.",
+                "Additionally, you gain proficiency in the Persuasion and Performance skills if you don't already have it. Your proficiency bonus is doubled for any ability check that uses either of those proficiencies."
+            ]
+        },
+        {
+            "name": "Inspiring Cadence",
+            "source": "HarmonyOath",
+            "className": "Paladin",
+            "classSource": "PHB",
+            "subclassShortName": "Harmony",
+            "subclassSource": "HarmonyOath",
+            "level": 20,
+            "entries": [
+                "At 20th level, as an action, you transform into a one-person orchestra. An epic concoction of sound and rhythm fills the space around you. You gain the following benefits for 1 minute:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You have resistance to all damage. You have immunity to thunder damage.",
+                        "Allies who start their turn within 60 feet of you regain hit points equal to 1d8 + your Charisma modifier."
+                    ]
+                },
+                "Once you use this feature, you can't use it again until you finish a long rest."
+            ]
         }
     ]
 }
