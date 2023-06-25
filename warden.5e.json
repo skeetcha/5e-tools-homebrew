@@ -1,4 +1,5 @@
 {
+    "$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
     "_meta": {
         "sources": [
             {
@@ -9,13 +10,15 @@
                     "Steve Fidler"
                 ],
                 "convertedBy": [
-                    "Daniel Unterholzner"
+                    "Cass Unterholzner"
                 ],
                 "version": "2.1b",
                 "url": "https://github.com/skeetcha/5e-tools-homebrew/",
-                "targetSchema": "1.2.1"
+                "targetSchema": "1.0.0"
             }
-        ]
+        ],
+        "dateAdded": 1584471600,
+        "dateLastModified": 1687706220
     },
     "class": [
         {
@@ -303,7 +306,7 @@
                 "armor": [
                     "light",
                     "medium",
-                    "shields"
+                    "{@item shield|phb|shields}"
                 ],
                 "weapons": [
                     "simple"
@@ -336,539 +339,41 @@
                 "goldAlternative": "5d4 x 10"
             },
             "classFeatures": [
-                [
-                    {
-                        "name": "Combat Discipline",
-                        "entries": [
-                            "At 1st level, you've complete your training in a certain combat specialty of yoru choice: Guardian, Fanatic, or Sage. Your choice grants you features at 1st level, and again at 6th, 10th, and 14th level."
-                        ],
-                        "gainSubclassFeature": true
-                    },
-                    {
-                        "name": "Natural Awareness",
-                        "entries": [
-                            "Also at 1st level, the time you have spent in nature learning your craft and honing your skills has given you an acute sense of danger.",
-                            "You have advantage on Perception checks while in a natural environment (such as a forest or a cave, but not a city or dungeon). Also, you can identify if natural phenomena (such as tremors, eruptions, magma flows, thunderstorms, and similar) are natural or unnatural."
-                        ]
-                    },
-                    {
-                        "name": "Natural Power",
-                        "entries": [
-                            "All wardens can pull from a well of innate power that allows them to channel the elements into their strikes.",
-                            "The Warden table shows how many power dice you have, as well as what die size to roll when using them.",
-                            "When you hit with a weapon attack, you can expend a power die to add the result to the attack's damage roll. The damage type of the additional damage is acid, bludgeoning, cold, fire, lightning, or thunder (your choice). This damage is magical.",
-                            "You regain all expended power dice when you finish a long rest, or half your total amount when you finish a short rest."
-                        ]
-                    }
-                ],
-                [
-                    {
-                        "name": "Source Magic",
-                        "entries": [
-                            "At 2nd level, you've unlocked your natural born affinity with the elements in the form of spellcasting. See chapter 10 of the Player's Handbook for the general rules of spellcasting.",
-                            {
-                                "name": "Spell Slots",
-                                "type": "entries",
-                                "entries": [
-                                    "The Warden table shows how many spell slots you have. The table also shows what the level of those slots is; all of your spell slots are the same level. To cast one of your warden spells of 1st level or higher, you must expend a spell slot. You regain all expended spell slots when you finish a short or long rest.",
-                                    "For example, when you are 5th level, you have two 2nd-level spell slots. To cast the 1st-level spell {@spell thunderwave|phb}, you must spend one of those slots, and you cast it as a 2nd-level spell."
-                                ]
-                            },
-                            {
-                                "name": "Spells Known of 1st Level and Higher",
-                                "type": "entries",
-                                "entries": [
-                                    "At 2nd level, you know two 1st level spells of your choice from the warden spell list.",
-                                    "The Spells Known column of the Warden table shows when you learn more warden spells of your choice of 1st level and higher. A spell you choose must be of a level no higher than what's shown in the table's Slot Level column for your level. When you reach 9th level, for example, you learn a new warden spell, which can be of 1st, 2nd, or 3rd level.",
-                                    "Additionally, when you gain a level in this class, you can choose one of your warden spells you know and replace it with another spell from the warden spell list, which also must be of a level for which you have spell slots."
-                                ]
-                            },
-                            {
-                                "name": "Spellcasting Ability",
-                                "type": "entries",
-                                "entries": [
-                                    "Wisdom is your spellcasting ability for your warden spells, so you use your Wisdom whenever a spell references your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a warden spell you cast and when making an attack roll with one.",
-                                    {
-                                        "type": "abilityDc",
-                                        "name": "Spell",
-                                        "attributes": [
-                                            "wis"
-                                        ]
-                                    },
-                                    {
-                                        "type": "abilityAttackMod",
-                                        "name": "Spell",
-                                        "attributes": [
-                                            "wis"
-                                        ]
-                                    }
-                                ]
-                            }
-                        ]
-                    }
-                ],
-                [
-                    {
-                        "name": "Prime Element",
-                        "entries": [
-                            "At 3rd level, your application of your elemental abilities encourages a specialized discipline of ability. You gain one of the following features of your choice. This choice is used by features you gain at later levels.",
-                            {
-                                "name": "Earthen Bulwark",
-                                "type": "entries",
-                                "entries": [
-                                    "You learn the {@spell magic stone|xge}, {@spell mold earth|ee}, and {@spell thorn whip|phb} cantrips.",
-                                    "When you spend a power die to deal additional bludgeoning damage on an attack, the target must succeed on a Strength saving throw equal to your spell save DC, or become grappled by the ground around it if the attack was a melee weapon attack, or have their movement speed halved until the start of their next turn if the attack was a ranged weapon attack.",
-                                    "Whenever a creature moves to within 5 feet of you, you can use your reaction to expend a power die to shove them away. You make a Strength (Athletics) check contested by the target's Strength (Athletics) or Dexterity (Acrobatics) check, adding the result of your power die to your roll. If you win the contest, you push the target back 10 feet and its movement becomes 0 until the end of its turn."
-                                ]
-                            },
-                            {
-                                "name": "Flaming Bravery",
-                                "type": "entries",
-                                "entries": [
-                                    "You learn the {@spell control flames|ee}, {@spell firebolt|phb}, and {@spell produce flame|phb} cantrips.",
-                                    "When you spend a power die to deal additional fire damage on an attack, the target takes additional fire damage equal to your power die at the start of its next turn.",
-                                    "Whenever a creature makes an attack roll against you, you can use your reaction and expend a power die to add the number rolled to your AC. You can choose to do this after the creature has rolled to attack, but must decide before the DM says whether the roll hits or misses. If you choose to expend this die and the attack misses, the attacking creature takes fire damage equal to your Wisdom modifier + the result of your power die."
-                                ]
-                            },
-                            {
-                                "name": "Putrid Corrosion",
-                                "type": "entries",
-                                "entries": [
-                                    "You learn the {@spell acid splash|phb}, {@spell infestation|xge}, and {@spell primal savagery|xge} cantrips.",
-                                    "When you spend a power die to deal additional acid damage on an attack, the target is unable to add their Strength or Dexterity modifier to weapon attacks and damage rolls they make until the end of their next turn.",
-                                    "Whenever you cast a spell that forces a creature to make a saving throw, you can expend a power die and add a corrosive element to the spell. Any creature affected by this spell that fails their saving throw also suffers the following effect. At the beginning of each of its turns, this creature must make a Constitution saving throw against your spell save DC. On a failed save, this creature takes acid damage equal to the result of your power die. On a successful save, or after 1 minute, the effect ends."
-                                ]
-                            },
-                            {
-                                "name": "Stoic Chill",
-                                "type": "entries",
-                                "entries": [
-                                    "You learn the {@spell frostbite|xge}, {@spell ray of frost|phb}, and {@spell shape water|xge} cantrips.",
-                                    "When you spend a power die to deal additional cold damage on an attack, the target has disadvantage on the next weapon attack it makes before the start of your next turn.",
-                                    "Whenever you must make a saving throw, you can use your reaction and expend a power die to add that die roll to your total. You may choose to do this after you have rolled the saving throw, but must decide before the DM says whether the roll succeeds or fails. If you choose to expend a die this way and succeed on the saving throw, all surfaces in a 10-foot radius of you become covered in enchanted ice which is difficult terrain. Any creature (other than you) in this area when the ice forms must succeed on a Dexterity saving throw against your spell save DC, or fall prone. This effect lasts until the end of your next turn."
-                                ]
-                            },
-                            {
-                                "name": "Unrelenting Storm",
-                                "type": "entries",
-                                "entries": [
-                                    "You learn the {@spell gust|ee}, {@spell lighting lure|scag}, and {@spell shocking grasp|phb} cantrips.",
-                                    "When you spend a power die to deal additional lightning or thunder damage on an attack, the target takes damage of the same type equal to your power die + your Wisdom modifier if it moves willingly before the start of your next turn.",
-                                    "Whenever you make an attack roll with a weapon attack, you can expend a power die and add that number to your attack roll. You may choose to do this after you have rolled to attack, but must decide before the DM says whether the roll hits or misses. If this attack roll hits, all creatures within 5 feet of you, or within 5 feet of the target of your attack (your choice) must make a Constitution saving throw against your spell save DC, being knocked back 5 feet on a failed saving throw."
-                                ]
-                            }
-                        ]
-                    }
-                ],
-                [
-                    {
-                        "name": "Ability Score Increase",
-                        "entries": [
-                            "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
-                        ]
-                    }
-                ],
-                [
-                    {
-                        "name": "Extra Attack",
-                        "entries": [
-                            "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
-                        ]
-                    },
-                    {
-                        "name": "Glamour",
-                        "entries": [
-                            "Also starting at 5th level, you can create a harmless elemental sensory effect originating from your body. This can be in the form of (but not limited to) water dripping from your hands, a fiery glow in your eyes, or for you skin to appear mottled and earthen.",
-                            "When making a Charisma check, you can expend a power die and add the result to your roll."
-                        ]
-                    }
-                ],
-                [
-                    {
-                        "name": "Combat Discipline Feature",
-                        "entries": [
-                            "At 6th level, you gain another feature from your Combat Discipline."
-                        ],
-                        "gainSubclassFeature": true
-                    }
-                ],
-                [
-                    {
-                        "name": "Prime Elemental Shield",
-                        "entries": [
-                            "At 7th level, you can use your reaction to produce one of the following effects, depending on the prime element you've chosen.",
-                            "{@b {@i Earthen Bulwark.}} When a creature makes a ranged attack against you or you are subjected to an effect that allows you to make a Dexterity saving throw, you can kick up a cloud of dust and rocks as a reaction to provide you half cover against that attack or effect.",
-                            "{@b {@i Flaming Bravery.}} When a creature forces you to save against being grappled, shoved, or knocked prone you can use your reaction to make that save with advantage, causing your body to suddenly flare up in energy.",
-                            "{@b {@i Putrid Corrosion.}} When a creature hits you with a melee attack with a metal weapon, you can use your reaction to weaken their weapon. Whenever that creature makes an attack with that weapon until the start of their next turn, that attack is made with disadvantage and can't benefit from advantage.",
-                            "{@b {@i Stoic Chill.}} Immediately after a creature has successfully hit you with a melee weapon, you can use your reaction to have that creature make a Constitution saving throw equal to your spell save DC. On a failed roll, you freeze their weapon, causing it to become impossibly heavy and rendered unusable. The weapon remains in a deep freeze until the end of the attacking creature's turn.",
-                            "{@b {@i Unrelenting Storm.}} Anytime a creature hits you or an ally within 5 feet of you with a ranged weapon attack, you can use your reaction to create a buffet of air that dampens the impact of the projectile, reducing the damage dealt by the attack by an amount equal to your Wisdom modifier."
-                        ]
-                    }
-                ],
-                [
-                    {
-                        "name": "Ability Score Improvement",
-                        "entries": [
-                            "When you reach 8th level, and again at 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
-                        ]
-                    }
-                ],
-                [],
-                [
-                    {
-                        "name": "Combat Discipline Feature",
-                        "entries": [
-                            "At 10th level, you gain another feature from your Combat Discipline."
-                        ],
-                        "gainSubclassFeature": true
-                    },
-                    {
-                        "name": "Nature Sense",
-                        "entries": [
-                            "Beginning at 10th level, you can channel nature to extend your senses.",
-                            "You can spend 1 minute touching a natural surface and focusing on it, after which you can shift your perspective as if your senses were originating from a point on that surface up to 100 feet away, and you are blinded and deafened to your own senses. You can maintain this vantage point for up to 10 minutes if you don't move, and can choose to end it at any time (no action required)."
-                        ]
-                    }
-                ],
-                [
-                    {
-                        "name": "Primeval Magic",
-                        "entries": [
-                            "Beginning at 11th level, when you use your action to cast a cantrip, you can make one weapon attack as a bonus action."
-                        ]
-                    }
-                ],
-                [
-                    {
-                        "name": "Ability Score Improvement",
-                        "entries": [
-                            "When you reach 12th level, and again at 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
-                        ]
-                    }
-                ],
-                [],
-                [
-                    {
-                        "name": "Combat Discipline Feature",
-                        "entries": [
-                            "At 14th level, you gain another feature from your Combat Discipline."
-                        ],
-                        "gainSubclassFeature": true
-                    }
-                ],
-                [
-                    {
-                        "name": "Channel Power",
-                        "entries": [
-                            "Beginning at 15th level, your natural power can benefit your spellcasting further. You can sacrifice your power dice to cast an additional spell.",
-                            "As a bonus action, you can expend four power dice to regain a single spell slot. Once you have used this feature, you must finish a long rest before you can do so again."
-                        ]
-                    }
-                ],
-                [
-                    {
-                        "name": "Ability Score Improvement",
-                        "entries": [
-                            "When you reach 16th level, and again at 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
-                        ]
-                    }
-                ],
-                [],
-                [
-                    {
-                        "name": "Improved Natural Awareness",
-                        "entries": [
-                            "Starting at 18th level, you also gain a bonus to your initiative equal to your Wisdom modifier and whenever you are in an entirely natural environment, you make initiative checks with advantage."
-                        ]
-                    }
-                ],
-                [
-                    {
-                        "name": "Ability Score Improvement",
-                        "entries": [
-                            "When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
-                        ]
-                    }
-                ],
-                [
-                    {
-                        "name": "Master of Elements",
-                        "entries": [
-                            "At 20th level, your master of your prime element has granted you access to its most powerful form.",
-                            "You gain one of the following 6th-level spells depending on your prime element choice. You can cast this spell once withint expending a spell slot, and this spell requires no concentration to maintain when you cast it this way. Once you have used this feature, you must finish a long rest before you can do so again.",
-                            {
-                                "type": "list",
-                                "items": [
-                                    "Earthen Bulwark: {@spell investiture of stone|xge}",
-                                    "Flaming Bravery: {@spell investiture of flame|xge}",
-                                    "Putrid Corrosion: {@spell investiture of corruption|WardenClass}",
-                                    "Stoic Chill: {@spell investiture of ice|xge}",
-                                    "Unrelenting Storm: {@spell investiture of wind|xge}"
-                                ]
-                            }
-                        ]
-                    }
-                ]
+                {
+                    "classFeature": "Combat Discipline|Warden|WC|1|WC",
+                    "gainSubclassFeature": true
+                },
+                "Natural Awareness|Warden|WC|1|WC",
+                "Natural Power|Warden|WC|1|WC",
+                "Source Magic|Warden|WC|2|WC",
+                "Prime Element|Warden|WC|3|WC",
+                "Ability Score Increase|Warden|WC|4|WC",
+                "Extra Attack|Warden|WC|5|WC",
+                "Glamour|Warden|WC|5|WC",
+                {
+                    "classFeature": "Combat Discipline Feature|Warden|WC|6|WC",
+                    "gainSubclassFeature": true
+                },
+                "Prime Elemental Shield|Warden|WC|7|WC",
+                "Ability Score Improvement|Warden|WC|8|WC",
+                {
+                    "classFeature": "Combat Discipline Feature|Warden|WC|10|WC",
+                    "gainSubclassFeature": true
+                },
+                "Nature Sense|Warden|WC|10|WC",
+                "Primeval Magic|Warden|WC|11|WC",
+                "Ability Score Improvement|Warden|WC|12|WC",
+                {
+                    "classFeature": "Combat Discipline Feature|Warden|WC|14|WC",
+                    "gainSubclassFeature": true
+                },
+                "Channel Power|Warden|WC|15|WC",
+                "Ability Score Improvement|Warden|WC|16|WC",
+                "Improved Natural Awareness|Warden|WC|18|WC",
+                "Ability Score Improvement|Warden|WC|19|WC",
+                "Master of Elements|Warden|WC|20|WC"
             ],
             "subclassTitle": "Combat Discipline",
-            "subclasses": [
-                {
-                    "name": "Guardian",
-                    "subclassFeatures": [
-                        [
-                            {
-                                "name": "Guardian Spells",
-                                "entries": [
-                                    "You learn an additional spell when you reach certain levels in this archetype, as shown in the Guardian Spells table. The spell counts as a warden spell for you, but it doesn't count against the number of warden spells you know.",
-                                    {
-                                        "type": "table",
-                                        "caption": "Guardian Spells",
-                                        "colLables": [
-                                            "Spell Level",
-                                            "Spells"
-                                        ],
-                                        "colStyles": [
-                                            "text-center",
-                                            "text-left"
-                                        ],
-                                        "rows": [
-                                            [
-                                                "1st",
-                                                "{@spell ensnaring strike|phb}"
-                                            ],
-                                            [
-                                                "2nd",
-                                                "{@spell maximilian's earthen grasp|xge}"
-                                            ],
-                                            [
-                                                "3rd",
-                                                "{@spell elemental weapon|phb}"
-                                            ],
-                                            [
-                                                "4th",
-                                                "{@spell stoneskin|phb}"
-                                            ]
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "Combat Training",
-                                "entries": [
-                                    "Your training has been with a variety of styles suited to your tastes and the needs of the situation. You gain proficiency in all martial weapons and heavy armor.",
-                                    "In addition, choose one of the following fighting style options. You can't take the same Fighting Style option more than once, even if you get to choose again.",
-                                    "{@b {@i Archery.}} You gain a +2 bonus to attack rolls you make with ranged weapons.",
-                                    "{@b {@i Great Weapon Fighting.}} When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or 2. The weapon must have the two-handed or versatile property for you to gain this benefit.",
-                                    "{@b {@i Protection.}} When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield."
-                                ]
-                            }
-                        ],
-                        [
-                            {
-                                "name": "Strength of the Elements",
-                                "entries": [
-                                    "Starting at 6th level, when you spend a power die to deal additional damage to a creature, you can choose to use the maximum result on that die, instead of rolling it. If the attack is a critical hit, you add double the maximum result if you use this feature.",
-                                    "You can do this a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a short or long rest."
-                                ]
-                            }
-                        ],
-                        [
-                            {
-                                "name": "Shielding Aura",
-                                "entries": [
-                                    "Starting at 10th level, if you or an ally you can see within 30 feet take acid, fire, cold, lightning, or thunder damage, you can spend your reaction to reduce the damage to that creature by half."
-                                ]
-                            }
-                        ],
-                        [
-                            {
-                                "name": "Nature's Fury",
-                                "entries": [
-                                    "At 14th level, your mastery of combat has enabled you to tap into your elemental affinity to strike true.",
-                                    "When you make a weapon attack, you can expend a power die to grant yourself advantuage on that attack. For each d20 that is part of the attack roll that would hit the creature, you deal additional damage equal to twice the result of your power die. The damage type of this additional damage is bludgeoning, acid, cold, fire, lightning, or thunder (your choice)."
-                                ]
-                            }
-                        ]
-                    ],
-                    "source": "WardenClass",
-                    "page": 6
-                },
-                {
-                    "name": "Fanatic",
-                    "subclassFeatures": [
-                        [
-                            {
-                                "name": "Fanatic Spells",
-                                "entries": [
-                                    "You learn an additional spell when you reach certain levels in this archetype, as shown in the Fanatic Spells table. The spell counts as a warden spell for you, but it doesn't count against the number of warden spells you know.",
-                                    {
-                                        "type": "table",
-                                        "caption": "Fanatic Spells",
-                                        "colLabels": [
-                                            "Spell Level",
-                                            "Spells"
-                                        ],
-                                        "colStyles": [
-                                            "text-center",
-                                            "text-left"
-                                        ],
-                                        "rows": [
-                                            [
-                                                "1st",
-                                                "{@spell absorb elements|xge}"
-                                            ],
-                                            [
-                                                "2nd",
-                                                "{@spell earthbind|xge}"
-                                            ],
-                                            [
-                                                "3rd",
-                                                "{@spell haste|phb}"
-                                            ],
-                                            [
-                                                "4th",
-                                                "{@spell fire shield|phb}"
-                                            ]
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "Pugilist",
-                                "entries": [
-                                    "Foregoing all need for weapons, you've focused your training on turning your fists into a force of nature. You gain the following benefits:",
-                                    {
-                                        "type": "list",
-                                        "items": [
-                                            "You can roll a d4 in place of the normal damage of your unarmed strike. This die changes as you gain warden levels, as shown in the Power Die column of the Warden table.",
-                                            "You can use Wisdom instead of Strength for the attack and damage rolls of your unarmed strikes.",
-                                            "When you take the Attack action to make an unarmed strike, you can make another unarmed strike as a bonus action."
-                                        ]
-                                    }
-                                ]
-                            }
-                        ],
-                        [
-                            {
-                                "name": "Burst of Power",
-                                "entries": [
-                                    "Starting at 6th level, your patience has allowed you to enhance the boons granted to you by your innate power.",
-                                    "When you spend a power die to deal additional damage to a creature with an unarmed strike, you can roll the power die an additional time and add its result to the damage.",
-                                    "You can do this a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest."
-                                ]
-                            }
-                        ],
-                        [
-                            {
-                                "name": "Extension Stance",
-                                "entries": [
-                                    "Beginning at 10th level, your blend of hand to hand and the elements has extended your range of influence.",
-                                    "Your reach with unarmed strikes is increased to 15 feet as long as both hands are empty. If you have a single creature grappled by an attack made within this reach, it does not occupy your hands and is instead grappled by your extended elements.",
-                                    "If a spell you cast has a range of touch, you can deliver it to any creature within range of your unarmed strikes."
-                                ]
-                            }
-                        ],
-                        [
-                            {
-                                "name": "Exploding Elements",
-                                "entries": [
-                                    "Starting at 14th level, the elements coursing through you can be expelled as an explosive burst. When you spend a power die to deal additional damage on an attack, you can choose to have that damage dealt to all creatures within 5 feet of your target, excluding you."
-                                ]
-                            }
-                        ]
-                    ],
-                    "source": "WardenClass",
-                    "page": 6
-                },
-                {
-                    "name": "Sage",
-                    "subclassFeatures": [
-                        [
-                            {
-                                "name": "Sage Spells",
-                                "entries": [
-                                    "You learn an additional spell when you reach certain levels in this archetype, as shown in the Sage Spells table. The spell counts as a warden spell for you, but it doesn't count against the number of warden spells you know.",
-                                    {
-                                        "type": "table",
-                                        "caption": "Sage Spells",
-                                        "colLabels": [
-                                            "Spell Level",
-                                            "Spells"
-                                        ],
-                                        "colStyles": [
-                                            "text-center",
-                                            "text-left"
-                                        ],
-                                        "rows": [
-                                            [
-                                                "1st",
-                                                "{@spell faerie fire|phb}"
-                                            ],
-                                            [
-                                                "2nd",
-                                                "{@spell moonbeam|phb}"
-                                            ],
-                                            [
-                                                "3rd",
-                                                "{@spell protection from energy|phb}"
-                                            ],
-                                            [
-                                                "4th",
-                                                "{@spell polymorph|phb}"
-                                            ]
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "Natural Armaments",
-                                "entries": [
-                                    "Your ability to harness magic has granted you a unique way to defend yourself and those around you.",
-                                    "You gain the {@spell shillelagh|phb} cantrip. In addition, you've shrouded yourself in a magical energy. Your AC cannot be lower than 16."
-                                ]
-                            }
-                        ],
-                        [
-                            {
-                                "name": "Innate Potential",
-                                "entries": [
-                                    "At 6th level, your potential in spellcasting manifests itself through your being, but you must tap into your pool of natural power to harness it effectively.",
-                                    "You can cast one of the following spells, as a 1st-level spell by expending two power dice: {@spell burning hands|phb}, {@spell earth trmor|xge}, {@spell ice knife|xge}, or {@spell thunderwave|phb}. You add the result of your power die to one damage roll of the spell cast.",
-                                    "These spells are also added to your Spells Known and can be cast using Warden spell slots. If you already know any of these spells you may replace them with another spell you have the spell slots to cast when you gain this feature."
-                                ]
-                            }
-                        ],
-                        [
-                            {
-                                "name": "Primal Dance",
-                                "entries": [
-                                    "Beginning at 10th level, you've learned to predict the movements of your enemies through their disturbance in the air around you. Whenever a hostile creature moves within 15 feet of you, as a reaction, you can move up to your speed."
-                                ]
-                            }
-                        ],
-                        [
-                            {
-                                "name": "Duality",
-                                "entries": [
-                                    "Starting at 14th level, your spell mastery has extended to your Prime Element and granted you talent with a second element.",
-                                    "Choose a second element as described in the Prime Element class feature. You gain the benefits of having both elements and any features that produce an effect based on the element you've chosen allow you access to either benefit but any limitations still apply. You may not choose the same element more than once.",
-                                    {
-                                        "type": "inset",
-                                        "name": "Feature Clarification",
-                                        "entries": [
-                                            "Features that reference your Prime Element were designed with one element in mind. This discipline allows a second option. I have clarified the interaction for each option below:",
-                                            "{@b Prime Element Shield.} You can use your reaction if either condition is met to trigger its effect.",
-                                            "{@b Master of Elements.} You can activate either investiture but may still only use this feature once per long rest."
-                                        ]
-                                    }
-                                ]
-                            }
-                        ]
-                    ],
-                    "source": "WardenClass",
-                    "page": 7
-                }
-            ],
             "classSpells": [
                 "Burning Hands",
                 "Chromatic Orb",
@@ -927,7 +432,7 @@
                     "armor": [
                         "light",
                         "medium",
-                        "shields"
+                        "{@item shield|phb|shields}"
                     ]
                 },
                 "requirements": {
@@ -944,6 +449,7 @@
                 {
                     "name": "Warden",
                     "type": "section",
+                    "source": "WardenClass",
                     "entries": [
                         "As his footfalls touch down upon the snow, it melts around their cloven shape. He's lived among the frozen embrace of the north for so long, sustained by the fire burning inside of him. His spear drags along the snow beside him as his pace picks up. His dark eyes suddenly glowing with a fierce amber light as he enters a full running stride. His prey lay still, staining the snow in his wake. Unwanted guests will not encroach upon his territory so long as he draws breath.",
                         "Thunder booms in the distance. The dark halls of this ruined castle alight with each crack of lightning. The diminutive goblin crouches in the corner, seeming to cower from each bolt. The heavily armored adventurer steps through the hallway, each step like an echo to the storm outside. As he rounds the next corner, the small goblin pounces onto his back, unleashing an electrified energy from his finger tips that courses throughout the adventurer's armor and brings him to his knees. The goblin cocks his fist and plunges it into a kink in the armor and knocks the adventurer out cold.",
@@ -968,7 +474,7 @@
                             "type": "entries",
                             "name": "Creating a Warden",
                             "entries": [
-                                "The most important aspect of a warden is their affinity to the natural world and how they marry it to their combat techniques. While the specific discipline of a warden’s martial prowess is chosen at 1st level, their prime element doesn’t mature until 3rd. This prime element may greatly affect the playstyle of your warden, so plan by reading their descriptions. Do you thrum with a fiery core? Are your movements as still as the snow atop a mountain? Or does the tenacity of a storm rage within you?",
+                                "The most important aspect of a warden is their affinity to the natural world and how they marry it to their combat techniques. While the specific discipline of a warden's martial prowess is chosen at 1st level, their prime element doesn't mature until 3rd. This prime element may greatly affect the playstyle of your warden, so plan by reading their descriptions. Do you thrum with a fiery core? Are your movements as still as the snow atop a mountain? Or does the tenacity of a storm rage within you?",
                                 "Do you see yourself taking up arms to defend your fellow adventurers? Or stalwartly defending your home town? Or do you set yourself out as a contract for hire – combatting the enemies of your employer to aid in your pursuits to cleanse nature.",
                                 "As a force of nature, your duties can often conflict with the laws of civilization and thus wardens typically lean to the chaotic or neutral good alignments. However, some are known to take their duties more seriously and walk the fine line between good and evil.",
                                 {
@@ -980,6 +486,324 @@
                                 }
                             ]
                         }
+                    ]
+                }
+            ]
+        }
+    ],
+    "classFeature": [
+        {
+            "name": "Combat Discipline",
+            "source": "WardenClass",
+            "className": "Warden",
+            "classSource": "WardenClass",
+            "level": 1,
+            "entries": [
+                "At 1st level, you've complete your training in a certain combat specialty of yoru choice: Guardian, Fanatic, or Sage. Your choice grants you features at 1st level, and again at 6th, 10th, and 14th level."
+            ]
+        },
+        {
+            "name": "Natural Awareness",
+            "source": "WardenClass",
+            "className": "Warden",
+            "classSource": "WardenClass",
+            "level": 1,
+            "entries": [
+                "Also at 1st level, the time you have spent in nature learning your craft and honing your skills has given you an acute sense of danger.",
+                "You have advantage on Perception checks while in a natural environment (such as a forest or a cave, but not a city or dungeon). Also, you can identify if natural phenomena (such as tremors, eruptions, magma flows, thunderstorms, and similar) are natural or unnatural."
+            ]
+        },
+        {
+            "name": "Natural Power",
+            "source": "WardenClass",
+            "className": "Warden",
+            "classSource": "WardenClass",
+            "level": 1,
+            "entries": [
+                "All wardens can pull from a well of innate power that allows them to channel the elements into their strikes.",
+                "The Warden table shows how many power dice you have, as well as what die size to roll when using them.",
+                "When you hit with a weapon attack, you can expend a power die to add the result to the attack's damage roll. The damage type of the additional damage is acid, bludgeoning, cold, fire, lightning, or thunder (your choice). This damage is magical.",
+                "You regain all expended power dice when you finish a long rest, or half your total amount when you finish a short rest."
+            ]
+        },
+        {
+            "name": "Source Magic",
+            "className": "Warden",
+            "source": "WardenClass",
+            "classSource": "WardenClass",
+            "level": 2,
+            "entries": [
+                "At 2nd level, you've unlocked your natural born affinity with the elements in the form of spellcasting. See chapter 10 of the Player's Handbook for the general rules of spellcasting.",
+                {
+                    "name": "Spell Slots",
+                    "type": "entries",
+                    "entries": [
+                        "The Warden table shows how many spell slots you have. The table also shows what the level of those slots is; all of your spell slots are the same level. To cast one of your warden spells of 1st level or higher, you must expend a spell slot. You regain all expended spell slots when you finish a short or long rest.",
+                        "For example, when you are 5th level, you have two 2nd-level spell slots. To cast the 1st-level spell {@spell thunderwave|phb}, you must spend one of those slots, and you cast it as a 2nd-level spell."
+                    ]
+                },
+                {
+                    "name": "Spells Known of 1st Level and Higher",
+                    "type": "entries",
+                    "entries": [
+                        "At 2nd level, you know two 1st level spells of your choice from the warden spell list.",
+                        "The Spells Known column of the Warden table shows when you learn more warden spells of your choice of 1st level and higher. A spell you choose must be of a level no higher than what's shown in the table's Slot Level column for your level. When you reach 9th level, for example, you learn a new warden spell, which can be of 1st, 2nd, or 3rd level.",
+                        "Additionally, when you gain a level in this class, you can choose one of your warden spells you know and replace it with another spell from the warden spell list, which also must be of a level for which you have spell slots."
+                    ]
+                },
+                {
+                    "name": "Spellcasting Ability",
+                    "type": "entries",
+                    "entries": [
+                        "Wisdom is your spellcasting ability for your warden spells, so you use your Wisdom whenever a spell references your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a warden spell you cast and when making an attack roll with one.",
+                        {
+                            "type": "abilityDc",
+                            "name": "Spell",
+                            "attributes": [
+                                "wis"
+                            ]
+                        },
+                        {
+                            "type": "abilityAttackMod",
+                            "name": "Spell",
+                            "attributes": [
+                                "wis"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Prime Element",
+            "className": "Warden",
+            "source": "WardenClass",
+            "classSource": "WardenClass",
+            "level": 3,
+            "entries": [
+                "At 3rd level, your application of your elemental abilities encourages a specialized discipline of ability. You gain one of the following features of your choice. This choice is used by features you gain at later levels.",
+                {
+                    "name": "Earthen Bulwark",
+                    "type": "entries",
+                    "entries": [
+                        "You learn the {@spell magic stone|xge}, {@spell mold earth|ee}, and {@spell thorn whip|phb} cantrips.",
+                        "When you spend a power die to deal additional bludgeoning damage on an attack, the target must succeed on a Strength saving throw equal to your spell save DC, or become grappled by the ground around it if the attack was a melee weapon attack, or have their movement speed halved until the start of their next turn if the attack was a ranged weapon attack.",
+                        "Whenever a creature moves to within 5 feet of you, you can use your reaction to expend a power die to shove them away. You make a Strength (Athletics) check contested by the target's Strength (Athletics) or Dexterity (Acrobatics) check, adding the result of your power die to your roll. If you win the contest, you push the target back 10 feet and its movement becomes 0 until the end of its turn."
+                    ]
+                },
+                {
+                    "name": "Flaming Bravery",
+                    "type": "entries",
+                    "entries": [
+                        "You learn the {@spell control flames|ee}, {@spell firebolt|phb}, and {@spell produce flame|phb} cantrips.",
+                        "When you spend a power die to deal additional fire damage on an attack, the target takes additional fire damage equal to your power die at the start of its next turn.",
+                        "Whenever a creature makes an attack roll against you, you can use your reaction and expend a power die to add the number rolled to your AC. You can choose to do this after the creature has rolled to attack, but must decide before the DM says whether the roll hits or misses. If you choose to expend this die and the attack misses, the attacking creature takes fire damage equal to your Wisdom modifier + the result of your power die."
+                    ]
+                },
+                {
+                    "name": "Putrid Corrosion",
+                    "type": "entries",
+                    "entries": [
+                        "You learn the {@spell acid splash|phb}, {@spell infestation|xge}, and {@spell primal savagery|xge} cantrips.",
+                        "When you spend a power die to deal additional acid damage on an attack, the target is unable to add their Strength or Dexterity modifier to weapon attacks and damage rolls they make until the end of their next turn.",
+                        "Whenever you cast a spell that forces a creature to make a saving throw, you can expend a power die and add a corrosive element to the spell. Any creature affected by this spell that fails their saving throw also suffers the following effect. At the beginning of each of its turns, this creature must make a Constitution saving throw against your spell save DC. On a failed save, this creature takes acid damage equal to the result of your power die. On a successful save, or after 1 minute, the effect ends."
+                    ]
+                },
+                {
+                    "name": "Stoic Chill",
+                    "type": "entries",
+                    "entries": [
+                        "You learn the {@spell frostbite|xge}, {@spell ray of frost|phb}, and {@spell shape water|xge} cantrips.",
+                        "When you spend a power die to deal additional cold damage on an attack, the target has disadvantage on the next weapon attack it makes before the start of your next turn.",
+                        "Whenever you must make a saving throw, you can use your reaction and expend a power die to add that die roll to your total. You may choose to do this after you have rolled the saving throw, but must decide before the DM says whether the roll succeeds or fails. If you choose to expend a die this way and succeed on the saving throw, all surfaces in a 10-foot radius of you become covered in enchanted ice which is difficult terrain. Any creature (other than you) in this area when the ice forms must succeed on a Dexterity saving throw against your spell save DC, or fall prone. This effect lasts until the end of your next turn."
+                    ]
+                },
+                {
+                    "name": "Unrelenting Storm",
+                    "type": "entries",
+                    "entries": [
+                        "You learn the {@spell gust|ee}, {@spell lighting lure|scag}, and {@spell shocking grasp|phb} cantrips.",
+                        "When you spend a power die to deal additional lightning or thunder damage on an attack, the target takes damage of the same type equal to your power die + your Wisdom modifier if it moves willingly before the start of your next turn.",
+                        "Whenever you make an attack roll with a weapon attack, you can expend a power die and add that number to your attack roll. You may choose to do this after you have rolled to attack, but must decide before the DM says whether the roll hits or misses. If this attack roll hits, all creatures within 5 feet of you, or within 5 feet of the target of your attack (your choice) must make a Constitution saving throw against your spell save DC, being knocked back 5 feet on a failed saving throw."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Ability Score Increase",
+            "source": "WardenClass",
+            "className": "Warden",
+            "classSource": "WardenClass",
+            "level": 4,
+            "entries": [
+                "When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+            ]
+        },
+        {
+            "name": "Extra Attack",
+            "source": "WardenClass",
+            "className": "Warden",
+            "classSource": "WardenClass",
+            "level": 5,
+            "entries": [
+                "Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn."
+            ]
+        },
+        {
+            "name": "Glamour",
+            "classSource": "WardenClass",
+            "className": "Warden",
+            "source": "WardenClass",
+            "level": 5,
+            "entries": [
+                "Also starting at 5th level, you can create a harmless elemental sensory effect originating from your body. This can be in the form of (but not limited to) water dripping from your hands, a fiery glow in your eyes, or for you skin to appear mottled and earthen.",
+                "When making a Charisma check, you can expend a power die and add the result to your roll."
+            ]
+        },
+        {
+            "name": "Combat Discipline Feature",
+            "classSource": "WardenClass",
+            "className": "Warden",
+            "source": "WardenClass",
+            "level": 6,
+            "entries": [
+                "At 6th level, you gain another feature from your Combat Discipline."
+            ]
+        },
+        {
+            "name": "Prime Elemental Shield",
+            "classSource": "WardenClass",
+            "source": "WardenClass",
+            "className": "Warden",
+            "level": 7,
+            "entries": [
+                "At 7th level, you can use your reaction to produce one of the following effects, depending on the prime element you've chosen.",
+                "{@b {@i Earthen Bulwark.}} When a creature makes a ranged attack against you or you are subjected to an effect that allows you to make a Dexterity saving throw, you can kick up a cloud of dust and rocks as a reaction to provide you half cover against that attack or effect.",
+                "{@b {@i Flaming Bravery.}} When a creature forces you to save against being grappled, shoved, or knocked prone you can use your reaction to make that save with advantage, causing your body to suddenly flare up in energy.",
+                "{@b {@i Putrid Corrosion.}} When a creature hits you with a melee attack with a metal weapon, you can use your reaction to weaken their weapon. Whenever that creature makes an attack with that weapon until the start of their next turn, that attack is made with disadvantage and can't benefit from advantage.",
+                "{@b {@i Stoic Chill.}} Immediately after a creature has successfully hit you with a melee weapon, you can use your reaction to have that creature make a Constitution saving throw equal to your spell save DC. On a failed roll, you freeze their weapon, causing it to become impossibly heavy and rendered unusable. The weapon remains in a deep freeze until the end of the attacking creature's turn.",
+                "{@b {@i Unrelenting Storm.}} Anytime a creature hits you or an ally within 5 feet of you with a ranged weapon attack, you can use your reaction to create a buffet of air that dampens the impact of the projectile, reducing the damage dealt by the attack by an amount equal to your Wisdom modifier."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "classSource": "WardenClass",
+            "source": "WardenClass",
+            "className": "Warden",
+            "level": 8,
+            "entries": [
+                "When you reach 8th level, and again at 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+            ]
+        },
+        {
+            "name": "Combat Discipline Feature",
+            "classSource": "WardenClass",
+            "className": "Warden",
+            "source": "WardenClass",
+            "level": 10,
+            "entries": [
+                "At 10th level, you gain another feature from your Combat Discipline."
+            ]
+        },
+        {
+            "name": "Nature Sense",
+            "classSource": "WardenClass",
+            "className": "Warden",
+            "source": "WardenClass",
+            "level": 10,
+            "entries": [
+                "Beginning at 10th level, you can channel nature to extend your senses.",
+                "You can spend 1 minute touching a natural surface and focusing on it, after which you can shift your perspective as if your senses were originating from a point on that surface up to 100 feet away, and you are blinded and deafened to your own senses. You can maintain this vantage point for up to 10 minutes if you don't move, and can choose to end it at any time (no action required)."
+            ]
+        },
+        {
+            "name": "Primeval Magic",
+            "classSource": "WardenClass",
+            "className": "Warden",
+            "source": "WardenClass",
+            "level": 11,
+            "entries": [
+                "Beginning at 11th level, when you use your action to cast a cantrip, you can make one weapon attack as a bonus action."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "classSource": "WardenClass",
+            "className": "Warden",
+            "source": "WardenClass",
+            "level": 12,
+            "entries": [
+                "When you reach 12th level, and again at 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+            ]
+        },
+        {
+            "name": "Combat Discipline Feature",
+            "className": "Warden",
+            "classSource": "WardenClass",
+            "source": "WardenClass",
+            "level": 14,
+            "entries": [
+                "At 14th level, you gain another feature from your Combat Discipline."
+            ]
+        },
+        {
+            "name": "Channel Power",
+            "className": "Warden",
+            "classSource": "WardenClass",
+            "source": "WardenClass",
+            "level": 15,
+            "entries": [
+                "Beginning at 15th level, your natural power can benefit your spellcasting further. You can sacrifice your power dice to cast an additional spell.",
+                "As a bonus action, you can expend four power dice to regain a single spell slot. Once you have used this feature, you must finish a long rest before you can do so again."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "WardenClass",
+            "className": "Warden",
+            "classSource": "WardenClass",
+            "level": 16,
+            "entries": [
+                "When you reach 16th level, and again at 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+            ]
+        },
+        {
+            "name": "Improved Natural Awareness",
+            "source": "WardenClass",
+            "className": "Warden",
+            "classSource": "WardenClass",
+            "level": 18,
+            "entries": [
+                "Starting at 18th level, you also gain a bonus to your initiative equal to your Wisdom modifier and whenever you are in an entirely natural environment, you make initiative checks with advantage."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "classSource": "WardenClass",
+            "className": "Warden",
+            "source": "WardenClass",
+            "level": 19,
+            "entries": [
+                "When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+            ]
+        },
+        {
+            "name": "Master of Elements",
+            "classSource": "WardenClass",
+            "className": "Warden",
+            "source": "WardenClass",
+            "level": 20,
+            "entries": [
+                "At 20th level, your master of your prime element has granted you access to its most powerful form.",
+                "You gain one of the following 6th-level spells depending on your prime element choice. You can cast this spell once withint expending a spell slot, and this spell requires no concentration to maintain when you cast it this way. Once you have used this feature, you must finish a long rest before you can do so again.",
+                {
+                    "type": "list",
+                    "items": [
+                        "Earthen Bulwark: {@spell investiture of stone|xge}",
+                        "Flaming Bravery: {@spell investiture of flame|xge}",
+                        "Putrid Corrosion: {@spell investiture of corruption|WardenClass}",
+                        "Stoic Chill: {@spell investiture of ice|xge}",
+                        "Unrelenting Storm: {@spell investiture of wind|xge}"
                     ]
                 }
             ]
@@ -1043,6 +867,134 @@
                         "You can use your action to blow a puff of noxious gas in a 15-foot cone originating from your mouth. Creatures affected by this must succed on a Constitution saving throw or become poisoned. They can repeat this saving throw at the start of their turn, ending the effect on a successful save."
                     ]
                 }
+            ]
+        }
+    ],
+    "subclass": [
+        {
+            "name": "Guardian",
+            "source": "WardenClass",
+            "className": "Warden",
+            "classSource": "WardenClass",
+            "shortName": "Guard",
+            "subclassFeatures": [
+                "Guardian Spells|Warden|WC|Guard|WC|1|WC",
+                "Combat Training|Warden|WC|Guard|WC|1|WC",
+                "Strength of the Elements|Warden|WC|Guard|WC|6|WC",
+                "Shielding Aura|Warden|WC|Guard|WC|10|WC",
+                "Nature's Fury|Warden|WC|Guard|WC|14|WC"
+            ]
+        },
+        {
+            "name": "Fanatic",
+            "source": "WardenClass",
+            "className": "Warden",
+            "classSource": "WardenClass",
+            "shortName": "Fan",
+            "subclassFeatures": [
+                "Fanatic Spells|Warden|WC|Fan|WC|1|WC",
+                "Pugilist|Warden|WC|Fan|WC|1|WC",
+                "Burst of Power|Warden|WC|Fan|WC|6|WC",
+                "Extension Stance|Warden|WC|Fan|WC|10|WC",
+                "Exploding Elements|Warden|WC|Fan|WC|14|WC"
+            ]
+        }
+    ],
+    "subclassFeature": [
+        {
+            "name": "Guardian Spells",
+            "source": "WardenClass",
+            "className": "Warden",
+            "classSource": "WardenClass",
+            "subclassShortName": "Guard",
+            "subclassSource": "WardenClass",
+            "level": 1,
+            "entries": [
+                "You learn an additional spell when you reach certain levels in this archetype, as shown in the Guardian Spells table. The spell counts as a warden spell for you, but it doesn't count against the number of warden spells you know.",
+                {
+                    "type": "table",
+                    "caption": "Guardian Spells",
+                    "colLabels": [
+                        "Spell Level",
+                        "Spells"
+                    ],
+                    "colStyles": [
+                        "text-center",
+                        "text-left"
+                    ],
+                    "rows": [
+                        [
+                            "1st",
+                            "{@spell ensnaring strike|phb}"
+                        ],
+                        [
+                            "2nd",
+                            "{@spell maximilian's earthen grasp|xge}"
+                        ],
+                        [
+                            "3rd",
+                            "{@spell elemental weapon|phb}"
+                        ],
+                        [
+                            "4th",
+                            "{@spell stoneskin|phb}"
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Combat Training",
+            "source": "WardenClass",
+            "className": "Warden",
+            "classSource": "WardenClass",
+            "subclassShortName": "Guard",
+            "subclassSource": "WardenClass",
+            "level": 1,
+            "entries": [
+                "Your training has been with a variety of styles suited to your tastes and the needs of the situation. You gain proficiency in all martial weapons and heavy armor.",
+                "In addition, choose one of the following fighting style options. You can't take the same Fighting Style option more than once, even if you get to choose again.",
+                "{@b {@i Archery.}} You gain a +2 bonus to attack rolls you make with ranged weapons.",
+                "{@b {@i Great Weapon Fighting.}} When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or 2. The weapon must have the two-handed or versatile property for you to gain this benefit.",
+                "{@b {@i Protection.}} When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield."
+            ]
+        },
+        {
+            "name": "Strength of the Elements",
+            "source": "WardenClass",
+            "className": "Warden",
+            "classSource": "WardenClass",
+            "subclassShortName": "Guard",
+            "subclassSource": "WardenClass",
+            "level": 6,
+            "entries": [
+                "Starting at 6th level, when you spend a power die to deal additional damage to a creature, you can choose to use the maximum result on that die, instead of rolling it. If the attack is a critical hit, you add double the maximum result if you use this feature.",
+                "You can do this a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a short or long rest."
+            ]
+        },
+        {
+            "name": "Shielding Aura",
+            "source": "WardenClass",
+            "className": "Warden",
+            "classSource": "WardenClass",
+            "subclassShortName": "Guard",
+            "subclassSource": "WardenClass",
+            "level": 10,
+            "entries": [
+                "Starting at 10th level, if you or an ally you can see within 30 feet take acid, fire, cold, lightning, or thunder damage, you can spend your reaction to reduce the damage to that creature by half."
+            ]
+        },
+        {
+            "name": "Nature's Fury",
+            "source": "WardenClass",
+            "className": "Warden",
+            "classSource": "WardenClass",
+            "subclassShortName": "Guard",
+            "subclassSource": "WardenClass",
+            "level": 14,
+            "entries": [
+                "At 14th level, your mastery of combat has enabled you to tap into your elemental affinity to strike true.",
+                "When you make a weapon attack, you can expend a power die to grant yourself advantuage on that attack. For each d20 that is part of the attack roll that would hit the creature, you deal additional damage equal to twice the result of your power die. The damage type of this additional damage is bludgeoning, acid, cold, fire, lightning, or thunder (your choice)."
             ]
         }
     ]

@@ -1,0 +1,258 @@
+{"subclasses": [
+    {
+        "name": "Guardian",
+        "subclassFeatures": [
+            [
+                {
+                    "name": "Guardian Spells",
+                    "entries": [
+                        "You learn an additional spell when you reach certain levels in this archetype, as shown in the Guardian Spells table. The spell counts as a warden spell for you, but it doesn't count against the number of warden spells you know.",
+                        {
+                            "type": "table",
+                            "caption": "Guardian Spells",
+                            "colLables": [
+                                "Spell Level",
+                                "Spells"
+                            ],
+                            "colStyles": [
+                                "text-center",
+                                "text-left"
+                            ],
+                            "rows": [
+                                [
+                                    "1st",
+                                    "{@spell ensnaring strike|phb}"
+                                ],
+                                [
+                                    "2nd",
+                                    "{@spell maximilian's earthen grasp|xge}"
+                                ],
+                                [
+                                    "3rd",
+                                    "{@spell elemental weapon|phb}"
+                                ],
+                                [
+                                    "4th",
+                                    "{@spell stoneskin|phb}"
+                                ]
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Combat Training",
+                    "entries": [
+                        "Your training has been with a variety of styles suited to your tastes and the needs of the situation. You gain proficiency in all martial weapons and heavy armor.",
+                        "In addition, choose one of the following fighting style options. You can't take the same Fighting Style option more than once, even if you get to choose again.",
+                        "{@b {@i Archery.}} You gain a +2 bonus to attack rolls you make with ranged weapons.",
+                        "{@b {@i Great Weapon Fighting.}} When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or 2. The weapon must have the two-handed or versatile property for you to gain this benefit.",
+                        "{@b {@i Protection.}} When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield."
+                    ]
+                }
+            ],
+            [
+                {
+                    "name": "Strength of the Elements",
+                    "entries": [
+                        "Starting at 6th level, when you spend a power die to deal additional damage to a creature, you can choose to use the maximum result on that die, instead of rolling it. If the attack is a critical hit, you add double the maximum result if you use this feature.",
+                        "You can do this a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a short or long rest."
+                    ]
+                }
+            ],
+            [
+                {
+                    "name": "Shielding Aura",
+                    "entries": [
+                        "Starting at 10th level, if you or an ally you can see within 30 feet take acid, fire, cold, lightning, or thunder damage, you can spend your reaction to reduce the damage to that creature by half."
+                    ]
+                }
+            ],
+            [
+                {
+                    "name": "Nature's Fury",
+                    "entries": [
+                        "At 14th level, your mastery of combat has enabled you to tap into your elemental affinity to strike true.",
+                        "When you make a weapon attack, you can expend a power die to grant yourself advantuage on that attack. For each d20 that is part of the attack roll that would hit the creature, you deal additional damage equal to twice the result of your power die. The damage type of this additional damage is bludgeoning, acid, cold, fire, lightning, or thunder (your choice)."
+                    ]
+                }
+            ]
+        ],
+        "source": "WardenClass",
+        "page": 6
+    },
+    {
+        "name": "Fanatic",
+        "subclassFeatures": [
+            [
+                {
+                    "name": "Fanatic Spells",
+                    "entries": [
+                        "You learn an additional spell when you reach certain levels in this archetype, as shown in the Fanatic Spells table. The spell counts as a warden spell for you, but it doesn't count against the number of warden spells you know.",
+                        {
+                            "type": "table",
+                            "caption": "Fanatic Spells",
+                            "colLabels": [
+                                "Spell Level",
+                                "Spells"
+                            ],
+                            "colStyles": [
+                                "text-center",
+                                "text-left"
+                            ],
+                            "rows": [
+                                [
+                                    "1st",
+                                    "{@spell absorb elements|xge}"
+                                ],
+                                [
+                                    "2nd",
+                                    "{@spell earthbind|xge}"
+                                ],
+                                [
+                                    "3rd",
+                                    "{@spell haste|phb}"
+                                ],
+                                [
+                                    "4th",
+                                    "{@spell fire shield|phb}"
+                                ]
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Pugilist",
+                    "entries": [
+                        "Foregoing all need for weapons, you've focused your training on turning your fists into a force of nature. You gain the following benefits:",
+                        {
+                            "type": "list",
+                            "items": [
+                                "You can roll a d4 in place of the normal damage of your unarmed strike. This die changes as you gain warden levels, as shown in the Power Die column of the Warden table.",
+                                "You can use Wisdom instead of Strength for the attack and damage rolls of your unarmed strikes.",
+                                "When you take the Attack action to make an unarmed strike, you can make another unarmed strike as a bonus action."
+                            ]
+                        }
+                    ]
+                }
+            ],
+            [
+                {
+                    "name": "Burst of Power",
+                    "entries": [
+                        "Starting at 6th level, your patience has allowed you to enhance the boons granted to you by your innate power.",
+                        "When you spend a power die to deal additional damage to a creature with an unarmed strike, you can roll the power die an additional time and add its result to the damage.",
+                        "You can do this a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest."
+                    ]
+                }
+            ],
+            [
+                {
+                    "name": "Extension Stance",
+                    "entries": [
+                        "Beginning at 10th level, your blend of hand to hand and the elements has extended your range of influence.",
+                        "Your reach with unarmed strikes is increased to 15 feet as long as both hands are empty. If you have a single creature grappled by an attack made within this reach, it does not occupy your hands and is instead grappled by your extended elements.",
+                        "If a spell you cast has a range of touch, you can deliver it to any creature within range of your unarmed strikes."
+                    ]
+                }
+            ],
+            [
+                {
+                    "name": "Exploding Elements",
+                    "entries": [
+                        "Starting at 14th level, the elements coursing through you can be expelled as an explosive burst. When you spend a power die to deal additional damage on an attack, you can choose to have that damage dealt to all creatures within 5 feet of your target, excluding you."
+                    ]
+                }
+            ]
+        ],
+        "source": "WardenClass",
+        "page": 6
+    },
+    {
+        "name": "Sage",
+        "subclassFeatures": [
+            [
+                {
+                    "name": "Sage Spells",
+                    "entries": [
+                        "You learn an additional spell when you reach certain levels in this archetype, as shown in the Sage Spells table. The spell counts as a warden spell for you, but it doesn't count against the number of warden spells you know.",
+                        {
+                            "type": "table",
+                            "caption": "Sage Spells",
+                            "colLabels": [
+                                "Spell Level",
+                                "Spells"
+                            ],
+                            "colStyles": [
+                                "text-center",
+                                "text-left"
+                            ],
+                            "rows": [
+                                [
+                                    "1st",
+                                    "{@spell faerie fire|phb}"
+                                ],
+                                [
+                                    "2nd",
+                                    "{@spell moonbeam|phb}"
+                                ],
+                                [
+                                    "3rd",
+                                    "{@spell protection from energy|phb}"
+                                ],
+                                [
+                                    "4th",
+                                    "{@spell polymorph|phb}"
+                                ]
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Natural Armaments",
+                    "entries": [
+                        "Your ability to harness magic has granted you a unique way to defend yourself and those around you.",
+                        "You gain the {@spell shillelagh|phb} cantrip. In addition, you've shrouded yourself in a magical energy. Your AC cannot be lower than 16."
+                    ]
+                }
+            ],
+            [
+                {
+                    "name": "Innate Potential",
+                    "entries": [
+                        "At 6th level, your potential in spellcasting manifests itself through your being, but you must tap into your pool of natural power to harness it effectively.",
+                        "You can cast one of the following spells, as a 1st-level spell by expending two power dice: {@spell burning hands|phb}, {@spell earth trmor|xge}, {@spell ice knife|xge}, or {@spell thunderwave|phb}. You add the result of your power die to one damage roll of the spell cast.",
+                        "These spells are also added to your Spells Known and can be cast using Warden spell slots. If you already know any of these spells you may replace them with another spell you have the spell slots to cast when you gain this feature."
+                    ]
+                }
+            ],
+            [
+                {
+                    "name": "Primal Dance",
+                    "entries": [
+                        "Beginning at 10th level, you've learned to predict the movements of your enemies through their disturbance in the air around you. Whenever a hostile creature moves within 15 feet of you, as a reaction, you can move up to your speed."
+                    ]
+                }
+            ],
+            [
+                {
+                    "name": "Duality",
+                    "entries": [
+                        "Starting at 14th level, your spell mastery has extended to your Prime Element and granted you talent with a second element.",
+                        "Choose a second element as described in the Prime Element class feature. You gain the benefits of having both elements and any features that produce an effect based on the element you've chosen allow you access to either benefit but any limitations still apply. You may not choose the same element more than once.",
+                        {
+                            "type": "inset",
+                            "name": "Feature Clarification",
+                            "entries": [
+                                "Features that reference your Prime Element were designed with one element in mind. This discipline allows a second option. I have clarified the interaction for each option below:",
+                                "{@b Prime Element Shield.} You can use your reaction if either condition is met to trigger its effect.",
+                                "{@b Master of Elements.} You can activate either investiture but may still only use this feature once per long rest."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        ],
+        "source": "WardenClass",
+        "page": 7
+    }
+]}
