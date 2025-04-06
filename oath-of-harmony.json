@@ -15,7 +15,10 @@
                 "url": "https://github.com/skeetcha/5e-tools-homebrew",
                 "version": "1.0"
             }
-        ]
+        ],
+        "edition": "classic",
+        "dateAdded": 1584446400,
+        "dateLastModified": 1743940800
     },
     "subclass": [
         {
