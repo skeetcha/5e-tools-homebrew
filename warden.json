@@ -13,12 +13,12 @@
                     "Cass Unterholzner"
                 ],
                 "version": "2.1b",
-                "url": "https://github.com/skeetcha/5e-tools-homebrew/",
-                "targetSchema": "1.0.0"
+                "url": "https://github.com/skeetcha/5e-tools-homebrew/"
             }
         ],
         "dateAdded": 1584471600,
-        "dateLastModified": 1687706220
+        "dateLastModified": 1687706220,
+        "edition": "classic"
     },
     "class": [
         {
@@ -306,7 +306,7 @@
                 "armor": [
                     "light",
                     "medium",
-                    "{@item shield|phb|shields}"
+                    "shield"
                 ],
                 "weapons": [
                     "simple"
@@ -432,7 +432,7 @@
                     "armor": [
                         "light",
                         "medium",
-                        "{@item shield|phb|shields}"
+                        "shield"
                     ]
                 },
                 "requirements": {
@@ -444,51 +444,7 @@
                     ],
                     "wis": 13
                 }
-            },
-            "fluff": [
-                {
-                    "name": "Warden",
-                    "type": "section",
-                    "source": "WardenClass",
-                    "entries": [
-                        "As his footfalls touch down upon the snow, it melts around their cloven shape. He's lived among the frozen embrace of the north for so long, sustained by the fire burning inside of him. His spear drags along the snow beside him as his pace picks up. His dark eyes suddenly glowing with a fierce amber light as he enters a full running stride. His prey lay still, staining the snow in his wake. Unwanted guests will not encroach upon his territory so long as he draws breath.",
-                        "Thunder booms in the distance. The dark halls of this ruined castle alight with each crack of lightning. The diminutive goblin crouches in the corner, seeming to cower from each bolt. The heavily armored adventurer steps through the hallway, each step like an echo to the storm outside. As he rounds the next corner, the small goblin pounces onto his back, unleashing an electrified energy from his finger tips that courses throughout the adventurer's armor and brings him to his knees. The goblin cocks his fist and plunges it into a kink in the armor and knocks the adventurer out cold.",
-                        "Perched atop a rocky outcropping a travel worn elf gestures with her hands and summons a cloud of fog and sends it into the mountain pass with a gust of wind. The trolls who have taken up residence at the narrowest part of the pass, claiming tolls on unsuspecting travelers, are completely enveloped by the thick miasma and bewildered as to its source. The rest of the adventuring party descend on the trolls and carve them in twain, opening the passage for their contract holder.",
-                        "No matter their duties, no matter their creed, a warden will have honed his skill in battle alongside his attunement to the elemental power of the material plane into a force of nature. Each warden has a different take on what the natural order of things is but the one thing they have in common is a natural born ability to command the elements and an aptitude for combat.",
-                        {
-                            "type": "entries",
-                            "name": "Forces of Nature",
-                            "entries": [
-                                "Wardens all share an innate ability to command the elements to some degree. They are durable and have a survivalist instinct as well which leads most wardens to specialize in formal combat as well, often supplementing a powerful weapon strike with an elemental edge. Beyond those basic similarities, each warden will specialize in a specific area of the battlefield. Either as a stalwart defender in the vanguard, following up the rear using ranged weaponry and spells, or skirmishing around the battlefield and using the terrain to their advantage. This combination of innate magical power and martial prowess gives the warden an edge in combat and a unique place amongst an adventuring party."
-                            ]
-                        },
-                        {
-                            "type": "entries",
-                            "name": "Distant Cousins",
-                            "entries": [
-                                "Unlike a druid, a warden does not serve nature; but rather commands nature to serve them. Their power is raw and innate and does not come from a lifetime of patience and practice. They are more at home in the confine of cities than other naturalists too and often find a position of duty within the civilized world.",
-                                "The work of a warden is never quite done, however. They often find themselves on the move from task to task, only very rarely spending their entire life dedicated to a single cause and working to achieve its resolution."
-                            ]
-                        },
-                        {
-                            "type": "entries",
-                            "name": "Creating a Warden",
-                            "entries": [
-                                "The most important aspect of a warden is their affinity to the natural world and how they marry it to their combat techniques. While the specific discipline of a warden's martial prowess is chosen at 1st level, their prime element doesn't mature until 3rd. This prime element may greatly affect the playstyle of your warden, so plan by reading their descriptions. Do you thrum with a fiery core? Are your movements as still as the snow atop a mountain? Or does the tenacity of a storm rage within you?",
-                                "Do you see yourself taking up arms to defend your fellow adventurers? Or stalwartly defending your home town? Or do you set yourself out as a contract for hire – combatting the enemies of your employer to aid in your pursuits to cleanse nature.",
-                                "As a force of nature, your duties can often conflict with the laws of civilization and thus wardens typically lean to the chaotic or neutral good alignments. However, some are known to take their duties more seriously and walk the fine line between good and evil.",
-                                {
-                                    "type": "entries",
-                                    "name": "Quick Build",
-                                    "entries": [
-                                        "You can make a warden quickly by following these suggestions. First, Strength or Dexterity should be your highest score to improve your martial presence. Then make Wisdom or Constitution your next highest score depending on your place on the battlefield. Second, choose the outlander background."
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ]
+            }
         }
     ],
     "classFeature": [
@@ -1212,6 +1168,49 @@
                         "Features that reference your Prime Element were designed with one element in mind. This discipline allows a second option. I have clarified the interaction for each option below:",
                         "{@b Prime Element Shield.} You can use your reaction if either condition is met to trigger its effect.",
                         "{@b Master of Elements.} You can activate either investiture but may still only use this feature once per long rest."
+                    ]
+                }
+            ]
+        }
+    ],
+    "classFluff": [
+        {
+            "name": "Warden",
+            "source": "WardenClass",
+            "entries": [
+                "As his footfalls touch down upon the snow, it melts around their cloven shape. He's lived among the frozen embrace of the north for so long, sustained by the fire burning inside of him. His spear drags along the snow beside him as his pace picks up. His dark eyes suddenly glowing with a fierce amber light as he enters a full running stride. His prey lay still, staining the snow in his wake. Unwanted guests will not encroach upon his territory so long as he draws breath.",
+                "Thunder booms in the distance. The dark halls of this ruined castle alight with each crack of lightning. The diminutive goblin crouches in the corner, seeming to cower from each bolt. The heavily armored adventurer steps through the hallway, each step like an echo to the storm outside. As he rounds the next corner, the small goblin pounces onto his back, unleashing an electrified energy from his finger tips that courses throughout the adventurer's armor and brings him to his knees. The goblin cocks his fist and plunges it into a kink in the armor and knocks the adventurer out cold.",
+                "Perched atop a rocky outcropping a travel worn elf gestures with her hands and summons a cloud of fog and sends it into the mountain pass with a gust of wind. The trolls who have taken up residence at the narrowest part of the pass, claiming tolls on unsuspecting travelers, are completely enveloped by the thick miasma and bewildered as to its source. The rest of the adventuring party descend on the trolls and carve them in twain, opening the passage for their contract holder.",
+                "No matter their duties, no matter their creed, a warden will have honed his skill in battle alongside his attunement to the elemental power of the material plane into a force of nature. Each warden has a different take on what the natural order of things is but the one thing they have in common is a natural born ability to command the elements and an aptitude for combat.",
+                {
+                    "type": "entries",
+                    "name": "Forces of Nature",
+                    "entries": [
+                        "Wardens all share an innate ability to command the elements to some degree. They are durable and have a survivalist instinct as well which leads most wardens to specialize in formal combat as well, often supplementing a powerful weapon strike with an elemental edge. Beyond those basic similarities, each warden will specialize in a specific area of the battlefield. Either as a stalwart defender in the vanguard, following up the rear using ranged weaponry and spells, or skirmishing around the battlefield and using the terrain to their advantage. This combination of innate magical power and martial prowess gives the warden an edge in combat and a unique place amongst an adventuring party."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Distant Cousins",
+                    "entries": [
+                        "Unlike a druid, a warden does not serve nature; but rather commands nature to serve them. Their power is raw and innate and does not come from a lifetime of patience and practice. They are more at home in the confine of cities than other naturalists too and often find a position of duty within the civilized world.",
+                        "The work of a warden is never quite done, however. They often find themselves on the move from task to task, only very rarely spending their entire life dedicated to a single cause and working to achieve its resolution."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Creating a Warden",
+                    "entries": [
+                        "The most important aspect of a warden is their affinity to the natural world and how they marry it to their combat techniques. While the specific discipline of a warden's martial prowess is chosen at 1st level, their prime element doesn't mature until 3rd. This prime element may greatly affect the playstyle of your warden, so plan by reading their descriptions. Do you thrum with a fiery core? Are your movements as still as the snow atop a mountain? Or does the tenacity of a storm rage within you?",
+                        "Do you see yourself taking up arms to defend your fellow adventurers? Or stalwartly defending your home town? Or do you set yourself out as a contract for hire – combatting the enemies of your employer to aid in your pursuits to cleanse nature.",
+                        "As a force of nature, your duties can often conflict with the laws of civilization and thus wardens typically lean to the chaotic or neutral good alignments. However, some are known to take their duties more seriously and walk the fine line between good and evil.",
+                        {
+                            "type": "entries",
+                            "name": "Quick Build",
+                            "entries": [
+                                "You can make a warden quickly by following these suggestions. First, Strength or Dexterity should be your highest score to improve your martial presence. Then make Wisdom or Constitution your next highest score depending on your place on the battlefield. Second, choose the outlander background."
+                            ]
+                        }
                     ]
                 }
             ]
