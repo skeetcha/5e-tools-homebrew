@@ -192,7 +192,8 @@
                 4,
                 4,
                 4
-            ]
+            ],
+            "hasFluff": true
         }
     ],
     "classFluff": [
@@ -228,7 +229,7 @@
             "classSource": "cartom",
             "level": 1,
             "entries": [
-                "You have a natural talent to read the spiritual level of tarot cards. Your deck of tarot cards contain hidden magic, that you have learnt to tap into and unleash. You will draw from a deck of the 56 Minor Arcana cards, which each contain a unique spell effect as shown on the Minor Arcana table.",
+                "You have a natural talent to read the spiritual level of tarot cards. Your deck of tarot cards contain hidden magic, that you have learnt to tap into and unleash. You will draw from a deck of the 56 Minor Arcana cards, which each contain a unique spell effect as shown on the {@table Minor Arcana|cartom} table.",
                 {
                     "name": "Cantrips",
                     "type": "entries",
@@ -444,7 +445,7 @@
             "level": 11,
             "entries": [
                 "Starting at 11th level, you are able to draw from your deck of 22 Major Arcana cards. When finishing a long rest, you reveal the top 3 cards of the deck, and choose one to draw.",
-                "The card you draw determines what 6th level and higher spells you have prepared for the day, as shown on the Major Arcana table. You can cast a 6th level spell from the card once per day without expending a spell slot. You must finish a long rest before you can do so again.",
+                "The card you draw determines what 6th level and higher spells you have prepared for the day, as shown on the {@table Major Arcana|cartom} table. You can cast a 6th level spell from the card once per day without expending a spell slot. You must finish a long rest before you can do so again.",
                 "Each time you finish a long rest, you must shuffle your whole Major Arcana deck and draw a new card."
             ]
         },
@@ -534,10 +535,10 @@
             "page": 4,
             "edition": "classic",
             "subclassFeatures": [
-                "Insight of Swords|Cartomancer|cartom|1|cartom",
-                "Tempest Strike|Cartomancer|cartom|6|cartom",
-                "Consistent Cards: Swords|Cartomancer|cartom|10|cartom",
-                "Intuition of Swords|Cartomancer|cartom|14|cartom"
+                "Insight of Swords|Cartomancer|cartom|Swords|cartom|1|cartom",
+                "Tempest Strike|Cartomancer|cartom|Swords|cartom|6|cartom",
+                "Consistent Cards: Swords|Cartomancer|cartom|Swords|cartom|10|cartom",
+                "Intuition of Swords|Cartomancer|cartom|Swords|cartom|14|cartom"
             ]
         },
         {
@@ -549,10 +550,10 @@
             "page": 4,
             "edition": "classic",
             "subclassFeatures": [
-                "Insight of Wands|Cartomancer|cartom|1|cartom",
-                "Foxfire|Cartomancer|cartom|6|cartom",
-                "Consistent Cards: Wands|Cartomancer|cartom|10|cartom",
-                "Intuition of Wands|Cartomancer|cartom|14|cartom"
+                "Insight of Wands|Cartomancer|cartom|Wands|cartom|1|cartom",
+                "Foxfire|Cartomancer|cartom|Wands|cartom|6|cartom",
+                "Consistent Cards: Wands|Cartomancer|cartom|Wands|cartom|10|cartom",
+                "Intuition of Wands|Cartomancer|cartom|Wands|cartom|14|cartom"
             ]
         },
         {
@@ -564,10 +565,10 @@
             "page": 5,
             "edition": "classic",
             "subclassFeatures": [
-                "Insight of Cups|Cartomancer|cartom|1|cartom",
-                "Repelling Frost|Cartomancer|cartom|6|cartom",
-                "Consistent Cards: Cups|Cartomancer|cartom|10|cartom",
-                "Intuition of Cups|Cartomancer|cartom|14|cartom"
+                "Insight of Cups|Cartomancer|cartom|Cups|cartom|1|cartom",
+                "Repelling Frost|Cartomancer|cartom|Cups|cartom|6|cartom",
+                "Consistent Cards: Cups|Cartomancer|cartom|Cups|cartom|10|cartom",
+                "Intuition of Cups|Cartomancer|cartom|Cups|cartom|14|cartom"
             ]
         },
         {
@@ -579,10 +580,459 @@
             "page": 5,
             "edition": "classic",
             "subclassFeatures": [
-                "Insight of Pentacles|Cartomancer|cartom|1|cartom",
-                "Soul Rip|Cartomancer|cartom|6|cartom",
-                "Consistent Cards: Pentacles|Cartomancer|cartom|10|cartom",
-                "Intuition of Pentacles|Cartomancer|cartom|14|cartom"
+                "Insight of Pentacles|Cartomancer|cartom|Pentacles|cartom|1|cartom",
+                "Soul Rip|Cartomancer|cartom|Pentacles|cartom|6|cartom",
+                "Consistent Cards: Pentacles|Cartomancer|cartom|Pentacles|cartom|10|cartom",
+                "Intuition of Pentacles|Cartomancer|cartom|Pentacles|cartom|14|cartom"
+            ]
+        }
+    ],
+    "subclassFeature": [
+        {
+            "name": "Insight of Swords",
+            "source": "cartom",
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "subclassShortName": "Swords",
+            "subclassSource": "cartom",
+            "level": 1,
+            "page": 4,
+            "entries": [
+                "Elusive and deadly, Cartomancers that specialize in the suit of Swords utilize the air around them to move freely around the battlefield, allowing them to land the ever important finishing blow.",
+                {
+                    
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Storm and Steel|Cartomancer|cartom|Swords|cartom|1|cartom"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Wind Step|Cartomancer|cartom|Swords|cartom|1|cartom"
+                }
+            ]
+        },
+        {
+            "name": "Storm and Steel",
+            "source": "cartom",
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "subclassShortName": "Swords",
+            "subclassSource": "cartom",
+            "level": 1,
+            "page": 4,
+            "entries": [
+                "When you gain this insight at 1st level, you gain proficiency with {@filter medium armor|items|type=medium armor}, {@filter shields|items|type=shield}, and {@filter martial weapons|items|type=martial weapon}.",
+                "Additionally, you learn the {@spell Booming Blade|tce} and {@spell Gust|xge} cantrips."
+            ]
+        },
+        {
+            "name": "Wind Step",
+            "source": "cartom",
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "subclassShortName": "Swords",
+            "subclassSource": "cartom",
+            "level": 1,
+            "page": 4,
+            "entries": [
+                "Starting at 1st level, you learn to swiftly move like the wind when avoiding attacks. When a creature within 5 feet of you that you can see targets you with an attack, you can use your reaction to impose disadvantage on the attack roll. If the attack misses, you can move up to 10 feet without provoking an attack of opportunity.",
+                "You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain all expended uses when you finish a short or long rest."
+            ]
+        },
+        {
+            "name": "Tempest Strike",
+            "source": "cartom",
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "subclassShortName": "Swords",
+            "subclassSource": "cartom",
+            "level": 6,
+            "page": 4,
+            "entries": [
+                "Starting at 6th level, once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal extra thunder damage to the target.",
+                "The attack deals {@dice 1d4} bonus thunder damage for each swords card in your spread (minimum {@dice 1d4})."
+            ]
+        },
+        {
+            "name": "Consistent Cards: Swords",
+            "source": "cartom",
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "subclassShortName": "Swords",
+            "subclassSource": "cartom",
+            "level": 10,
+            "page": 4,
+            "entries": [
+                "Starting at 10th level, when using a non-swords card to cast a spell, you can choose to cast the suit of swords variant of the card instead.",
+                "Additionally, whenever you have at least one suit of swords card in your spread, you can {@action Disengage} as a bonus action."
+            ]
+        },
+        {
+            "name": "Intuition of Swords",
+            "source": "cartom",
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "subclassShortName": "Swords",
+            "subclassSource": "cartom",
+            "level": 14,
+            "page": 4,
+            "entries": [
+                "Starting at 14th level, you gain resistance to thunder and lightning damage.",
+                "Additionally, you learn to use the air around you when navigating the battlefield. When you take the {@action disengage} action, your speed increases by 15 feet for the current turn, and you gain a flying speed equal to your current walking speed. This benefit works only in short bursts; you fall if you end your turn in the air and nothing else is holding you aloft."
+            ]
+        },
+        {
+            "name": "Insight of Wands",
+            "source": "cartom",
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "subclassShortName": "Wands",
+            "subclassSource": "cartom",
+            "level": 1,
+            "page": 4,
+            "entries": [
+                "Masters of the Arcane, Cartomancers that specialize in the suit of Wands can cast spells quicker than most, with the help of their spectral companion.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Fire and Focus|Cartomancer|cartom|Wands|cartom|1|cartom"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Fox of Fates|Cartomancer|cartom|Wands|cartom|1|cartom"
+                }
+            ]
+        },
+        {
+            "name": "Fire and Focus",
+            "source": "cartom",
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "subclassShortName": "Wands",
+            "subclassSource": "cartom",
+            "level": 1,
+            "page": 4,
+            "entries": [
+                "When you gain this insight at 1st level, you gain proficiency in one of the following skills of your choice: Intimidation or Perception.",
+                "Additionally, you learn the {@spell Create Bonfire|xge} and {@spell Control Flames|xge} cantrips."
+            ]
+        },
+        {
+            "name": "Fox of Fates",
+            "source": "cartom",
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "subclassShortName": "Wands",
+            "subclassSource": "cartom",
+            "level": 1,
+            "page": 4,
+            "entries": [
+                "Starting at 1st level, when using a wands card to cast a spell, you summon a spectral fox to your side. When you are next hit by an attack, you can use your reaction to make the fox intercept, reducing the damage taken by an amount equal to half of your Cartomancer level (rounded up) plus your Charisma modifier.",
+                "The spectral fox occupies your space and moves with you. Once it intercepts an attack, it disappears. Only one spectral fox can be active at a time."
+            ]
+        },
+        {
+            "name": "Foxfire",
+            "source": "cartom",
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "subclassShortName": "Wands",
+            "subclassSource": "cartom",
+            "level": 6,
+            "page": 4,
+            "entries": [
+                "Starting at 6th level, as a Bonus Action, you can cause your spectral fox to run and collide with a creature of your choice, bursting into flames.",
+                "The creature it collides with takes {@dice 1d4} fire damage for each wands card in your spread (minimum {@dice 1d4}). The fox disappears once this feature is used."
+            ]
+        },
+        {
+            "name": "Consistent Cards: Wands",
+            "source": "cartom",
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "subclassShortName": "Wands",
+            "subclassSource": "cartom",
+            "level": 10,
+            "page": 4,
+            "entries": [
+                "Starting at 10th level, when using a non-wands card to cast a spell, you can choose to cast the suit of wands variant of the card instead. Casting a card in this way still triggers your Fox of Fates feature.",
+                "Additionally, whenever you have at least one suit of wands card in your spread, once per turn you can add your Charisma modifier to a single cantrip damage roll."
+            ]
+        },
+        {
+            "name": "Intuition of Wands",
+            "source": "cartom",
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "subclassShortName": "Wands",
+            "subclassSource": "cartom",
+            "level": 14,
+            "page": 4,
+            "entries": [
+                "Starting at 14th level, you gain resistance to fire damage.",
+                "Additionally, rather than colliding with a creature when using your Foxfire ability, you can use the fox's energy to instantly cast a spell that has a casting time of 1 action. This can be done as a part of the same Bonus Action, and still consumes a spell slot."
+            ]
+        },
+        {
+            "name": "Insight of Cups",
+            "source": "cartom",
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "subclassShortName": "Cups",
+            "subclassSource": "cartom",
+            "level": 1,
+            "page": 5,
+            "entries": [
+                "Harnessing the restorative properties of water, Cartomancers that specialize in the suit of Cups are able to react to danger in a unique way, curing injuries before they have chance to settle in.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Water and Warding|Cartomancer|cartom|Cups|cartom|1|cartom"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Aqua Shell|Cartomancer|cartom|Cups|cartom|1|cartom"
+                }
+            ]
+        },
+        {
+            "name": "Water and Warding",
+            "source": "cartom",
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "subclassShortName": "Cups",
+            "subclassSource": "cartom",
+            "level": 1,
+            "page": 5,
+            "entries": [
+                "When you gain this insight at 1st level, you gain proficiency with {@filter medium armor|items|type=medium armor} and {@filter shields|items|type=shield}.",
+                "Additionally, you learn the {@spell Frostbite|xge} and {@spell Shape Water|xge} cantrips."
+            ]
+        },
+        {
+            "name": "Aqua Shell",
+            "source": "cartom",
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "subclassShortName": "Cups",
+            "subclassSource": "cartom",
+            "level": 1,
+            "page": 5,
+            "entries": [
+                "Starting at 1st level, as a bonus action you can summon a thin globe of water on an allied creature you can see within 60ft. The globe surrounds the creature and lasts up to 1 minute, until you use it again, or until you are incapacitated.",
+                "When a creature you can see within 60 feet of you hits the protected target with an attack, you can use your reaction to immediately cure the injury. You restore hit points to the protected creature equal to 2 + half of your Cartomancer level (rounded up).",
+                "You can restore hit points in this way a number of times equal to your Charisma modifier (a minimum of once). You regain all expended uses when you finish a short or long rest."
+            ]
+        },
+        {
+            "name": "Repelling Frost",
+            "source": "cartom",
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "subclassShortName": "Cups",
+            "subclassSource": "cartom",
+            "level": 6,
+            "page": 5,
+            "entries": [
+                "Starting at 6th level, you are able to cause a retaliation of frost originating from the creautre protected by your Aqua Shell feature. When using a reaction to cure the protected ally, you cause the creature that made the triggering attack to take cold damage equal to 2 + half your Cartomancer level (rounded up)."
+            ]
+        },
+        {
+            "name": "Consistent Cards: Cups",
+            "source": "cartom",
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "subclassShortName": "Cups",
+            "subclassSource": "cartom",
+            "level": 10,
+            "page": 5,
+            "entries": [
+                "Starting at 10th level, when using a non-cups card to cast a spell, you can choose to cast the suit of cups variant of the card instead.",
+                "Additionally, if you have at least one suit of cups card in your spread, whenever you use a spell of 1st level or higher to restore hit points to a creature, the creature regains additional hit points equal to 2 + the spell's level."
+            ]
+        },
+        {
+            "name": "Intuition of Cups",
+            "source": "cartom",
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "subclassShortName": "Cups",
+            "subclassSource": "cartom",
+            "level": 14,
+            "page": 5,
+            "entries": [
+                "Starting at 14th level, you and the creature protected by your Aqua Shell feature gain resistance to cold damage.",
+                "Additionally, when a creature is damaged by your Repelling Frost feature, it has disadvantage on the next attack roll it makes before the end of its next turn."
+            ]
+        },
+        {
+            "name": "Insight of Pentacles",
+            "source": "cartom",
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "subclassShortName": "Pentacles",
+            "subclassSource": "cartom",
+            "level": 1,
+            "page": 5,
+            "entries": [
+                "Connected to the element of earth and the physical body, Cartomancers that specialize in the suit of Pentacles sap the strength of others to enhance their own.",
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Venom and Vigor|Cartomancer|cartom|Pentacles|cartom|1|cartom"
+                },
+                {
+                    "type": "refSubclassFeature",
+                    "subclassFeature": "Channel Vitality|Cartomancer|cartom|Pentacles|cartom|1|cartom"
+                }
+            ]
+        },
+        {
+            "name": "Venom and Vigor",
+            "source": "cartom",
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "subclassShortName": "Pentacles",
+            "subclassSource": "cartom",
+            "level": 1,
+            "page": 5,
+            "entries": [
+                "When you gain this insight at 1st level, you gain proficiency with {@filter medium armor|items|type=medium armor}, {@filter shields|items|type=shield}, and {@filter martial weapons|items|type=martial weapon}.",
+                "Additionally, you learn the {@spell Poison Spray|xphb} and {@spell Mold earth|xge} cantrips."
+            ]
+        },
+        {
+            "name": "Channel Vitality",
+            "source": "cartom",
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "subclassShortName": "Pentacles",
+            "subclassSource": "cartom",
+            "level": 1,
+            "page": 5,
+            "entries": [
+                "Starting at 1st level, you are able to draw the life of nearby creatures to bolster your own. As a bonus action, you gain 1 temporary hit point for each creature within 5 feet of you. The number of temporary hit points gained per creature increases when you reach certain levels in this class, increasing to 2 at 10th level and 3 at 15th level.",
+                "You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain all expended uses when you finish a short or long rest."
+            ]
+        },
+        {
+            "name": "Soul Rip",
+            "source": "cartom",
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "subclassShortName": "Pentacles",
+            "subclassSource": "cartom",
+            "level": 6,
+            "page": 5,
+            "entries": [
+                "Starting at 6th level, when using your Channel Vitality feature, you can choose to draw the life of a creature in a more vicious manner. Creatures that are hostile to you take {@dice 1d4} necrotic damage for each pentacles card in your spread (minimum {@dice 1d4}), and grant twice as many temporary hit points."
+            ]
+        },
+        {
+            "name": "Consistent Cards: Pentacles",
+            "source": "cartom",
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "subclassShortName": "Pentacles",
+            "subclassSource": "cartom",
+            "level": 10,
+            "page": 5,
+            "entries": [
+                "Starting at 10th level, when using a non-pentacles card to cast a spell, you can choose to cast the suit of pentacles variant of the card instead.",
+                "Additionally, whenever you have at least one suit of pentacles card in your spread, if you damage a creature with your Soul Rip feature, that creature has disadvantage on the next saving throw it makes against a spell you cast before the end of your next turn."
+            ]
+        },
+        {
+            "name": "Intuition of Pentacles",
+            "source": "cartom",
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "subclassShortName": "Pentacles",
+            "subclassSource": "cartom",
+            "level": 14,
+            "page": 5,
+            "entries": [
+                "Starting at 14th level, you gain resistance to poison and necrotic damage.",
+                "Additionally, you gain the following benefits as long as you have temporary hit points:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You have resistance to bludgeoning, piercing, and slashing damage.",
+                        "A critical hit against you becomes a normal hit.",
+                        "You have advantage on Constitution saving throws that you make to maintain your concentration on a spell when you take damage."
+                    ]
+                }
+            ]
+        }
+    ],
+    "table": [
+        {
+            "name": "Minor Arcana",
+            "source": "cartom",
+            "page": 6,
+            "colLabels": [
+                "Card",
+                "of Swords",
+                "of Wands",
+                "of Cups",
+                "of Pentacles"
+            ],
+            "colStyles": [
+                "col-1 text-center",
+                "col-4 text-center",
+                "col-4 text-center",
+                "col-4 text-center",
+                "col-4 text-center"
+            ],
+            "rows": [
+                [ "2",      "{@spell Thunderous Smite}",    "{@spell Chromatic Orb}",           "{@spell Cure Wounds}",         "{@spell Inflict Wounds}" ],
+                [ "3",      "{@spell Shield}",              "{@spell Mage Armor}",              "{@spell Armor of Agathys}",    "{@spell Absorb Elements|xge}" ],
+                [ "4",      "{@spell Divine Favor}",        "{@spell Bane}",                    "{@spell Bless}",               "{@spell Faerie Fire}" ],
+                [ "5",      "{@spell Fog Cloud}",           "{@spell Color Spray}",             "{@spell Grease}",              "{@spell Entangle}" ],
+                [ "6",      "{@spell Thunderwave}",         "{@spell Burning Hands}",           "{@spell Ice Spike|kges}",      "{@spell Arms of Hadar}" ],
+                [ "7",      "{@spell Witch Bolt}",          "{@spell Magic Missile}",           "{@spell Guiding Bolt}",        "{@spell Ensnaring Strike}" ],
+                [ "8",      "{@spell Shatter}",             "{@spell Aganazzar's Scorcher|xge}","{@spell Prayer of Healing}",   "{@spell Maximilian's Earthen Grasp|xge}" ],
+                [ "9",      "{@spell Blur}",                "{@spell Mirror Image}",            "{@spell Warding Bond}",        "{@spell Hold Person}" ],
+                [ "10",     "{@spell Warding Wind|xge}",    "{@spell Enlarge/Reduce}",          "{@spell Blindness/Deafness}",  "{@spell Misty Step}" ],
+                [ "Page",   "{@spell Lightning Bolt}",      "{@spell Fireball}",                "{@spell Tidal Wave|xge}",      "{@spell Vampiric Touch}" ],
+                [ "Knight", "{@spell Thunder Step|xge}",    "{@spell Haste}",                   "{@spell Revivify}",            "{@spell Life Transference|xge}" ],
+                [ "Queen",  "{@spell Staggering Smite}",    "{@spell Wall of Fire}",            "{@spell Ice Storm}",           "{@spell Blight}" ],
+                [ "King",   "{@spell Storm Sphere|xge}",    "{@spell Polymorph}",               "{@spell Death Ward}",          "{@spell Aura of Life}" ],
+                [ "Ace",  "{@spell Steel Wind Strike|xphb}","{@spell Immolation|xge}",              "{@spell Mass Cure Wounds}",    "{@spell Insect Plague}" ]
+            ]
+        },
+        {
+            "name": "Major Arcana",
+            "source": "cartom",
+            "colLabels": [
+                "Card",
+                "Value",
+                "Spells"
+            ],
+            "colStyles": [
+                "col-1 text-center",
+                "col-1 text-center",
+                "col-10 text-center"
+            ],
+            "rows": [
+                [ "The Fool", "0", "{@spell Investiture of Wind|xge}, {@spell Investiture of Flame|xge}, {@spell Investiture of Ice|xge}, {@spell Investiture of Stone|xge}" ],
+                [ "The Magician", "1", "{@spell Arcane Gate}, {@spell Mirage Arcane}, {@spell Antimagic Field}, {@spell Wish}" ],
+                [ "The High Priestess", "2", "{@spell Find the Path}, {@spell Project Image}, {@spell Telepathy}, {@spell Foresight}" ],
+                [ "The Empress", "3", "{@spell Conjure Fey}, {@spell Regenerate}, {@spell Animal Shapes}, {@spell Mass Polymorph|xge}" ],
+                [ "The Emperor", "4", "{@spell Mass Suggestion}, {@spell Finger of Death}, {@spell Dominate Monster}, {@spell Invulnerability|xge}" ],
+                [ "The Hierophant", "5", "{@spell Chain Lightning}, {@spell Etherealness}, {@spell Holy Aura}, {@spell Power Word Heal}" ],
+                [ "The Lovers", "6", "{@spell Heroes' Feast}, {@spell Conjure Celestial}, {@spell Clone}, {@spell Astral Projection}" ],
+                [ "The Chariot", "7", "{@spell Bones of the Earth|xge}, {@spell Teleport}, {@spell Maze}, {@spell Gate}" ],
+                [ "Strength", "8", "{@spell Tenser's Transformation|xge}, {@spell Mordenkainen's Sword}, {@spell Power Word Stun}, {@spell Shapechange}" ],
+                [ "The Hermit", "9", "{@spell Globe of Invulnerability}, {@spell Sequester}, {@spell Maddening Darkness|xge}, {@spell Prismatic Wall}" ],
+                [ "Wheel of Fortune", "10", "{@spell Scatter|xge}, {@spell Prismatic Spray}, {@spell Control Weather}, {@filter Any 9th-level spell|spells|level=9}" ],
+                [ "Justice", "11", "{@spell True Seeing}, {@spell Fire Storm}, {@spell Incendiary Cloud}, {@spell True Polymorph}" ],
+                [ "The Hanged Man", "12", "{@spell Flesh to Stone}, {@spell Reverse Gravity}, {@spell Tsunami}, {@spell Weird}" ],
+                [ "Death", "13", "{@spell Harm}, {@spell Resurrection}, {@spell Abi-Dalzim's Horrid Wilting|xge}, {@spell True Resurrection}" ],
+                [ "Temperance", "14", "{@spell Contingency}, {@spell Power Word Pain|xge}, {@spell Antipathy/Sympathy}, {@spell Time Stop}" ],
+                [ "The Devil", "15", "{@spell Soul Cage|xge}, {@spell Forcecage}, {@spell Demiplane}, {@spell Imprisonment}" ],
+                [ "The Tower", "16", "{@spell Disintegrate}, {@spell Whirlwind|xge}, {@spell Earthquake}, {@spell Storm of Vengeance}" ],
+                [ "The Star", "17", "{@spell Heal}, {@spell Crown of Stars|xge}, {@spell Illusory Dragon|xge}, {@spell Mass Heal}" ],
+                [ "The Moon", "18", "{@spell Mental Prison|xge}, {@spell Plane Shift}, {@spell Mind Blank}, {@spell Psychic Scream|xge}" ],
+                [ "The Sun", "19", "{@spell Sunbeam}, {@spell Delayed Blast Fireball}, {@spell Sunburst}, {@spell Meteor Swarm}" ],
+                [ "Judgement", "20", "{@spell Wind Walk}, {@spell Simulacrum}, {@spell Feeblemind}, {@spell Power Word Kill}" ],
+                [ "The World", "21", "{@spell Druid Grove|xge}, {@spell Mordenkainen's Magnificent Mansion}, {@spell Mighty Fortress|xge}, {@filter Any 9th-level spell|spells|level=9}" ]
             ]
         }
     ]
