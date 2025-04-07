@@ -1,0 +1,589 @@
+{
+    "$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+    "_meta": {
+        "sources": [
+            {
+                "json": "cartom",
+                "abbreviation": "CART",
+                "full": "Cartomancer",
+                "convertedBy": [
+                    "Cass Forest"
+                ],
+                "authors": [
+                    "u/Spiderbatman"
+                ],
+                "dateReleased": "2018-08-09",
+                "url": "https://homebrewery.naturalcrit.com/share/Bk-Rot4w7",
+                "version": "1.1"
+            }
+        ],
+        "dateAdded": 0,
+        "dateLastModified": 0,
+        "edition": "classic"
+    },
+    "class": [
+        {
+            "source": "cartom",
+            "name": "Cartomancer",
+            "edition": "classic",
+            "hd": {
+                "faces": 8,
+                "number": 1
+            },
+            "proficiency": [
+                "wis",
+                "cha"
+            ],
+            "startingProficiencies": {
+                "armor": [
+                    "light"
+                ],
+                "weapons": [
+                    "simple"
+                ],
+                "skills": [
+                    {
+                        "choose": {
+                            "count": 2,
+                            "from": [
+                                "arcana",
+                                "deception",
+                                "history",
+                                "insight",
+                                "performance",
+                                "persuasion"
+                            ]
+                        }
+                    }
+                ]
+            },
+            "startingEquipment": {
+                "additionalFromBackground": true,
+                "default": [
+                    "(a) a {@item light crossbow|phb} and {@item crossbow bolts (20)|phb|20 bolts} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+                    "(a) a {@item scholar's pack|phb} or (b) an {@item explorer's pack|phb}",
+                    "{@item Leather armor|phb}, a {@item dagger|phb}, and a tarot deck"
+                ],
+                "goldAlternative": "{@dice 4d4 × 10|4d4 × 10|Starting Gold}",
+                "defaultData": [
+                    {
+                        "a": [
+                            "light crossbow|phb",
+                            "crossbow bolts (20)|phb"
+                        ],
+                        "b": [
+                            {
+                                "equipmentType": "weaponSimple"
+                            }
+                        ]
+                    },
+                    {
+                        "a": [
+                            "scholar's pack|phb"
+                        ],
+                        "b": [
+                            "explorer's pack|phb"
+                        ]
+                    },
+                    {
+                        "_": [
+                            "leather armor|phb",
+                            "dagger|phb",
+                            "tarot deck"
+                        ]
+                    }
+                ]
+            },
+            "requirements": {},
+            "multiclassing": {
+                "proficienciesGained": {
+                    "armor": [
+                        "light"
+                    ]
+                },
+                "requirements": {
+                    "cha": 13
+                }
+            },
+            "classFeatures": [
+                "Card Casting|Cartomancer|cartom|1|cartom",
+                {
+                    "classFeature": "Suit Insight|Cartomancer|cartom|1|cartom",
+                    "gainSubclassFeature": true
+                },
+                "Mulligan|Cartomancer|cartom|2|cartom",
+                "Natural Clarity|Cartomancer|cartom|3|cartom",
+                "Ability Score Improvement|Cartomancer|cartom|4|cartom",
+                {
+                    "classFeature": "Insight Feature|Cartomancer|cartom|6|cartom",
+                    "gainSubclassFeature": true
+                },
+                "Ability Score Improvement|Cartomancer|cartom|8|cartom",
+                {
+                    "classFeature": "Insight Feature|Cartomancer|cartom|10|cartom",
+                    "gainSubclassFeature": true
+                },
+                "Major Cartomancy (6th level)|Cartomancer|cartom|11|cartom",
+                "Ability Score Improvement|Cartomancer|cartom|12|cartom",
+                "Major Cartomancy (7th level)|Cartomancer|cartom|13|cartom",
+                {
+                    "classFeature": "Insight Feature|Cartomancer|cartom|14|cartom",
+                    "gainSubclassFeature": true
+                },
+                "Major Cartomancy (8th level)|Cartomancer|cartom|15|cartom",
+                "Ability Score Improvement|Cartomancer|cartom|16|cartom",
+                "Major Cartomancy (9th level)|Cartomancer|cartom|17|cartom",
+                "Fools Journey|Cartomancer|cartom|18|cartom",
+                "Ability Score Improvement|Cartomancer|cartom|19|cartom",
+                "Change Fate|Cartomancer|cartom|20|cartom"
+            ],
+            "classTableGroups": [
+                {
+                    "colLabels": [
+                        "{@filter Cantrips Known|spells|level=0|class=Cartomancer}",
+                        "Spread Size",
+                        "Spell Slots",
+                        "Slot Level"
+                    ],
+                    "rows": [
+                        [ 2, 3, 1, "1st" ],
+                        [ 2, 3, 2, "1st" ],
+                        [ 2, 3, 2, "2nd" ],
+                        [ 3, 4, 2, "2nd" ],
+                        [ 3, 4, 2, "3rd" ],
+                        [ 3, 4, 2, "3rd" ],
+                        [ 3, 5, 2, "4th" ],
+                        [ 3, 5, 2, "4th" ],
+                        [ 3, 5, 2, "5th" ],
+                        [ 4, 6, 2, "5th" ],
+                        [ 4, 6, 3, "5th" ],
+                        [ 4, 6, 3, "5th" ],
+                        [ 4, 7, 3, "5th" ],
+                        [ 4, 7, 3, "5th" ],
+                        [ 4, 7, 3, "5th" ],
+                        [ 4, 7, 3, "5th" ],
+                        [ 4, 7, 4, "5th" ],
+                        [ 4, 7, 4, "5th" ],
+                        [ 4, 7, 4, "5th" ],
+                        [ 4, 7, 4, "5th" ]
+                    ]
+                }
+            ],
+            "casterProgression": "pact",
+            "spellcastingAbility": "cha",
+            "cantripProgression": [
+                2,
+                2,
+                2,
+                3,
+                3,
+                3,
+                3,
+                3,
+                3,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4,
+                4
+            ]
+        }
+    ],
+    "classFluff": [
+        {
+            "name": "Cartomancer",
+            "source": "cartom",
+            "entries": [
+                "Within the many circles of fortune tellers, tarot cards are used for divinatory purposes. However, the more dedicated few are able to unleash the magic within the cards, shaping their fate.",
+                {
+                    "name": "Fate of the Cards",
+                    "type": "entries",
+                    "entries": [
+                        "Most fortune-tellers have spent years learning how to read tarot cards to predict mundane life events, however the Cartomancer has been able to see more in the cards. Knowing how to unleash the magic the cards contain, they also interpret their own reading to mean something more. With a sense of purpose and destiny in mind, the Cartomancer sets out to achieve the goal foretold by the cards they have dedicated their lives to.",
+                        "A Cartomancer believes that each card drawn to determine theiur own fate will play a part in their journey. Given the supernatural abilities granted by their cards, they believe that each card is drawn for a reason, and will come in use at some point during the day.",
+                        {
+                            "name": "Quick Build",
+                            "type": "entries",
+                            "entries": [
+                                "You can make a Cartomancer quickly by following these suggestions. First, Charisma should be your highest ability score, followed by Constitution. Second, choose the {@background Hermit}. Third, choose the {@spell fire bolt} and {@spell sword burst} cantrips."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "classFeature": [
+        {
+            "name": "Card Casting",
+            "source": "cartom",
+            "page": 2,
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "level": 1,
+            "entries": [
+                "You have a natural talent to read the spiritual level of tarot cards. Your deck of tarot cards contain hidden magic, that you have learnt to tap into and unleash. You will draw from a deck of the 56 Minor Arcana cards, which each contain a unique spell effect as shown on the Minor Arcana table.",
+                {
+                    "name": "Cantrips",
+                    "type": "entries",
+                    "entries": [
+                        "At 1st level, you know two cantrips of your choice from the Cartomancer spell list. You learn additional Cartomancer cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Cartomancer table."
+                    ]
+                },
+                {
+                    "name": "Spells Known",
+                    "type": "entries",
+                    "entries": [
+                        "The spells you know how to cast will change day-to-day depending on what Minor Arcana cards you currently have in your spread. Drawing a spread will be explained in the Minor Cartomancy section."
+                    ]
+                },
+                {
+                    "name": "Minor Cartomancy",
+                    "type": "entries",
+                    "entries": [
+                        "You are able to draw cards from your magic-infused Minor Arcana deck, to then place in your spread. You draw a number of cards from the top of your deck equal to that shown in the Spread Size column of the Cartomancer table. If you draw a card that contains a spell you do not yet have the appropriate spell slot level to cast, you can instead cast it as any lower level card of the same suit.",
+                        "Additionally, when casting a spell with a card of a certain suit, you can instead choose to cast that card as if it were a 2 of the same suit.",
+                        "Each time you finish a long rest, you must shuffle your whole Minor Arcana deck and draw a new spread."
+                    ]
+                },
+                {
+                    "name": "Casting a Spell",
+                    "type": "entries",
+                    "entries": [
+                        "The Cartomancer table shows how many Minor Arcana cards you can use to cast a spell in the Spell Slots column of the Cartomancer table. The table also shows what the level of those slots is; all of your spell slots are the same level. When using one of your minor arcana cards to cast a of 1st level or higher, you must expend a spell slot. You regain all expended Spell Slots when you finish a short or long rest."
+                    ]
+                },
+                {
+                    "name": "Spellcasting Ability",
+                    "type": "entries",
+                    "entries": [
+                        "Charisma is your spellcasting ability for your Cartomancer spells. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a Cartomancer spell you cast and when making an attack roll with one.",
+                        {
+                            "type": "abilityDc",
+                            "name": "Spell",
+                            "attributes": [
+                                "cha"
+                            ]
+                        },
+                        {
+                            "type": "abilityAttackMod",
+                            "name": "Spell",
+                            "attributes": [
+                                "cha"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Spellcasting Focus",
+                    "type": "entries",
+                    "entries": [
+                        "Your tarot deck counts as your spellcasting focus for your spells. If you lose your tarot deck, you can perform a 1-hour ceremony to conjure a replacement."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Suit Insight",
+            "source": "cartom",
+            "page": 3,
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "level": 1,
+            "entries": [
+                "At 1st level, you choose one of the four suits to dedicate your time to, gaining a deeper understanding of its meaning and unlocking extraordinary powers."
+            ]
+        },
+        {
+            "name": "Insight Feature",
+            "source": "cartom",
+            "page": 3,
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "level": 6,
+            "entries": [
+                "At 6th level, you are granted another feature from your suit insight."
+            ]
+        },
+        {
+            "name": "Insight Feature",
+            "source": "cartom",
+            "page": 3,
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "level": 10,
+            "entries": [
+                "At 10th level, you are granted another feature from your suit insight."
+            ]
+        },
+        {
+            "name": "Insight Feature",
+            "source": "cartom",
+            "page": 3,
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "level": 14,
+            "entries": [
+                "At 14th level, you are granted another feature from your suit insight."
+            ]
+        },
+        {
+            "name": "Mulligan",
+            "source": "cartom",
+            "page": 3,
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "level": 2,
+            "entries": [
+                "Starting at 2nd level, you are able to discard a Minor Arcana card from your spread and replace it with another.",
+                "As a bonus action, place the unwanted cards at the bottom of your deck, and draw the replacements from the top of the deck. You are able to replace a number of cards per day equal to your total spread size."
+            ]
+        },
+        {
+            "name": "Natural Clarity",
+            "source": "cartom",
+            "page": 3,
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "level": 3,
+            "entries": [
+                "Starting at 3rd level, you are able to use certain Divination spells at will. The spells learnt at each level are shown on the Clarity Spells table.",
+                "You can cast each known spell once per day, and you must finish a long rest before you can do so again.",
+                {
+                    "caption": "Clarity Spells",
+                    "type": "table",
+                    "colLabels": [
+                        "Cartomancer Level",
+                        "Spell"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [ "3rd", "{@spell Detect Magic}, {@spell Augury}" ],
+                        [ "5th", "{@spell Clairvoyance}" ],
+                        [ "7th", "{@spell Divination}" ],
+                        [ "9th", "{@spell Scrying}" ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "cartom",
+            "page": 3,
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "level": 4,
+            "entries": [
+                "When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "cartom",
+            "page": 3,
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "level": 8,
+            "entries": [
+                "When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "cartom",
+            "page": 3,
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "level": 12,
+            "entries": [
+                "When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "cartom",
+            "page": 3,
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "level": 16,
+            "entries": [
+                "When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "cartom",
+            "page": 3,
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "level": 19,
+            "entries": [
+                "When you reach 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+            ]
+        },
+        {
+            "name": "Major Cartomancy (6th level)",
+            "source": "cartom",
+            "page": 3,
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "level": 11,
+            "entries": [
+                "Starting at 11th level, you are able to draw from your deck of 22 Major Arcana cards. When finishing a long rest, you reveal the top 3 cards of the deck, and choose one to draw.",
+                "The card you draw determines what 6th level and higher spells you have prepared for the day, as shown on the Major Arcana table. You can cast a 6th level spell from the card once per day without expending a spell slot. You must finish a long rest before you can do so again.",
+                "Each time you finish a long rest, you must shuffle your whole Major Arcana deck and draw a new card."
+            ]
+        },
+        {
+            "name": "Major Cartomancy (7th level)",
+            "source": "cartom",
+            "page": 3,
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "level": 13,
+            "entries": [
+                "Your Major Cartomancy feature now provides access to 7th-level spells for the cards drawn."
+            ]
+        },
+        {
+            "name": "Major Cartomancy (8th level)",
+            "source": "cartom",
+            "page": 3,
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "level": 15,
+            "entries": [
+                "Your Major Cartomancy feature now provides access to 8th-level spells for the cards drawn."
+            ]
+        },
+        {
+            "name": "Major Cartomancy (9th level)",
+            "source": "cartom",
+            "page": 3,
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "level": 17,
+            "entries": [
+                "Your Major Cartomancy feature now provides access to 9th-level spells for the cards drawn."
+            ]
+        },
+        {
+            "name": "Fools Journey",
+            "source": "cartom",
+            "page": 3,
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "level": 18,
+            "entries": [
+                "Starting at 17th level, you are able to unleash the powers of The Fool card at will. You have the following spell prepared at all times depending on your Insight choice, as shown on the Journey Spells table. You can cast this spell once per day without expending a spell slot, and you must finish a long rest before being able to do so again.",
+                "Additionally, if you draw The Fool as your Major Arcana card, you can cast each spell on that card once.",
+                {
+                    "type": "table",
+                    "caption": "Journey Spells",
+                    "colLabels": [
+                        "Insight",
+                        "Spell"
+                    ],
+                    "colStyles": [
+                        "col-2 text-center",
+                        "col-10"
+                    ],
+                    "rows": [
+                        [ "Swords", "{@spell Investiture of Wind|xge}" ],
+                        [ "Wands", "{@spell Investiture of Flame|xge}" ],
+                        [ "Cups", "{@spell Investiture of Ice|xge}" ],
+                        [ "Pentacles", "{@spell Investiture of Stone|xge}" ]
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Change Fate",
+            "source": "cartom",
+            "page": 3,
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "level": 20,
+            "entries": [
+                "At 20th level, as an Action, you can discard your current Minor Arcana spread to regain all of your expended spell slots from your Card Casting feature. Once you regain spell slots with this feature, you draw a new spread as part of the same action.",
+                "You must finish a long rest before you can use this feature again."
+            ]
+        }
+    ],
+    "subclass": [
+        {
+            "name": "Insight of Swords",
+            "shortName": "Swords",
+            "source": "cartom",
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "page": 4,
+            "edition": "classic",
+            "subclassFeatures": [
+                "Insight of Swords|Cartomancer|cartom|1|cartom",
+                "Tempest Strike|Cartomancer|cartom|6|cartom",
+                "Consistent Cards: Swords|Cartomancer|cartom|10|cartom",
+                "Intuition of Swords|Cartomancer|cartom|14|cartom"
+            ]
+        },
+        {
+            "name": "Insight of Wands",
+            "shortName": "Wands",
+            "source": "cartom",
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "page": 4,
+            "edition": "classic",
+            "subclassFeatures": [
+                "Insight of Wands|Cartomancer|cartom|1|cartom",
+                "Foxfire|Cartomancer|cartom|6|cartom",
+                "Consistent Cards: Wands|Cartomancer|cartom|10|cartom",
+                "Intuition of Wands|Cartomancer|cartom|14|cartom"
+            ]
+        },
+        {
+            "name": "Insight of Cups",
+            "shortName": "Cups",
+            "source": "cartom",
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "page": 5,
+            "edition": "classic",
+            "subclassFeatures": [
+                "Insight of Cups|Cartomancer|cartom|1|cartom",
+                "Repelling Frost|Cartomancer|cartom|6|cartom",
+                "Consistent Cards: Cups|Cartomancer|cartom|10|cartom",
+                "Intuition of Cups|Cartomancer|cartom|14|cartom"
+            ]
+        },
+        {
+            "name": "Insight of Pentacles",
+            "shortName": "Pentacles",
+            "source": "cartom",
+            "className": "Cartomancer",
+            "classSource": "cartom",
+            "page": 5,
+            "edition": "classic",
+            "subclassFeatures": [
+                "Insight of Pentacles|Cartomancer|cartom|1|cartom",
+                "Soul Rip|Cartomancer|cartom|6|cartom",
+                "Consistent Cards: Pentacles|Cartomancer|cartom|10|cartom",
+                "Intuition of Pentacles|Cartomancer|cartom|14|cartom"
+            ]
+        }
+    ]
+}
